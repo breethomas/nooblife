@@ -1,0 +1,27 @@
+/* line 2, /Users/breethomas/Programs/nooblife/source/stylesheets/containers.css.sass */
+body {
+  background-color: white;
+  font-family: "Raleway", sans-serif; }
+
+/* line 6, /Users/breethomas/Programs/nooblife/source/stylesheets/containers.css.sass */
+.container {
+  margin-top: 10%;
+  margin-left: 10%; }
+
+/* line 10, /Users/breethomas/Programs/nooblife/source/stylesheets/containers.css.sass */
+.masthead {
+  margin-bottom: 8em; }
+
+/* line 13, /Users/breethomas/Programs/nooblife/source/stylesheets/containers.css.sass */
+#main {
+  margin-right: 10%;
+  color: #666666; }
+  /* line 17, /Users/breethomas/Programs/nooblife/source/stylesheets/containers.css.sass */
+  #main p {
+    font-color: #666666; }
+
+/* line 20, /Users/breethomas/Programs/nooblife/source/stylesheets/containers.css.sass */
+footer {
+  text-align: left;
+  margin-left: 10%;
+  margin-bottom: 20px; }

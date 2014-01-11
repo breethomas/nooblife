@@ -1,0 +1,42 @@
+/* line 1, /Users/breethomas/Programs/nooblife/source/stylesheets/post.css.sass */
+a {
+  text-decoration: none; }
+
+/* line 5, /Users/breethomas/Programs/nooblife/source/stylesheets/post.css.sass */
+article .body {
+  font-color: #666666;
+  margin-bottom: 20px; }
+  /* line 9, /Users/breethomas/Programs/nooblife/source/stylesheets/post.css.sass */
+  article .body a {
+    color: #f90881; }
+    /* line 11, /Users/breethomas/Programs/nooblife/source/stylesheets/post.css.sass */
+    article .body a:hover {
+      color: black; }
+/* line 14, /Users/breethomas/Programs/nooblife/source/stylesheets/post.css.sass */
+article .block-divider {
+  background-color: #f2f2f2;
+  height: 50px;
+  margin-bottom: 5%; }
+/* line 19, /Users/breethomas/Programs/nooblife/source/stylesheets/post.css.sass */
+article .date {
+  color: #f90881;
+  font-weight: bold; }
+/* line 23, /Users/breethomas/Programs/nooblife/source/stylesheets/post.css.sass */
+article .title {
+  box-sizing: border-box;
+  border-bottom-color: #e6e6e6;
+  border-bottom-style: solid;
+  padding-bottom: 15px;
+  border-bottom-width: 1px;
+  font-weight: 200;
+  font-size: 2.25em;
+  margin-top: 0.25em; }
+  /* line 34, /Users/breethomas/Programs/nooblife/source/stylesheets/post.css.sass */
+  article .title a {
+    color: #666666; }
+    /* line 36, /Users/breethomas/Programs/nooblife/source/stylesheets/post.css.sass */
+    article .title a:hover {
+      color: #f90881; }
+/* line 39, /Users/breethomas/Programs/nooblife/source/stylesheets/post.css.sass */
+article p {
+  color: #666666; }

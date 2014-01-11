@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Noob Life</title>
+    <meta charset='utf-8'>
+    <meta content='IE=edge;chrome=1' http-equiv='X-UA-Compatible'>
+    <link href="/stylesheets/app.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <section class='container'>
+      <header class='masthead'>
+        <a href='http://www.noob-life.com' title='Noob Life'>
+          <img src='/images/nooblife.png'>
+        </a>
+      </header>
+      <div id='main' role='main'>
+        <article>
+          <div class='date'>11/01/13</div>
+          <h2 class='title'>Sinatra Round Two - Group Date</h2>
+          <div class='body'>
+            <p><img alt="" src="/images/two-spacegals.png" /></p>
+            
+            <p>So for our second round with Sinatra, it was a group date. Four to be
+            exact. It was a far more valuable experience this
+            go-around, in that I actually learned AND applied some of my learning! The ole’
+            synapses finally started to click on day two of the project.</p>
+            
+            <p>Highlights include:</p>
+            
+            <ul>
+              <li>
+                <p>Area of most growth - definitely testing. Exposure to &lt;a href=
+            "https://github.com/jnicklas/capybara" target= blank&gt;Capybara&lt;/a&gt; and
+            overall just starting to think with a “test first” mindset. I’m not
+            quite yet the testing artist I hope to be, but at least I’m able to
+            think through some ideas on where/how/what to test first when
+            starting to construct a feature. </p>
+              </li>
+              <li>
+                <p>Area of most lightbulbs - generally in how things work in
+            Sinatra, especially around routes and parameters/hashes. </p>
+              </li>
+              <li>
+                <p>Area of most confusion - setting up the database method and trying to
+            account for a test db along with a dev db. I would like to spend a
+            little more time in understanding how best to architect the different
+            environments and run automated testing across the whole app.</p>
+              </li>
+            </ul>
+            
+            <p>If I had another week, I might try to rebuild &lt;a href=
+            'http://www.aha-method.com/' target= blank&gt;The Aha Method&lt;/a&gt; website,
+            which was something I built a long time ago (with a lot of help). It is
+            small enough that I think I could tackle it on my own, as well as
+            enhance the contact feature and the bratblog summary feature (which
+            currently parses html with a regex, and that is a ‘no-no’). </p>
+            
+            <p>Team Thoughts - working with Nathaniel, Rolen and Louisa was super
+            rad. Nathaniel and Rolen were very patient with both Louisa and
+            myself, as we forced them to sit through our slow typing and
+            explain the same things at least three times, sometimes using different
+            accents while also drawing cartoon pictures on the whiteboard.
+            Additionally, Rolen took on several nicknames, including
+            “Papa-Rolen”, “The Godfather” and “Ironic Overlord” (rolen.io), aka
+            <em>Fierce Cat on a Fire Breathing Unicorn</em>.</p>
+            
+            <p><img alt="" src="/images/rolen-io.png" /></p>
+          </div>
+          <div class='block-divider'></div>
+        </article>
+      </div>
+    </section>
+    <footer>
+      <a href='https://github.com/breethomas' target='_blank' title='Bree Thomas - Github'>
+        <img src='/images/github-10-32.png'>
+      </a>
+    </footer>
+  </body>
+</html>
+<!-- %aside -->
+<!-- %h2 Recent Articles -->
+<!-- %ol -->
+<!-- - blog.articles[0...10].each do |article| -->
+<!-- %li -->
+<!-- = link_to article.title, article -->
+<!-- %span= article.date.strftime('%b %e') -->
+<!-- %h2 Tags -->
+<!-- %ol -->
+<!-- - blog.tags.each do |tag, articles| -->
+<!-- %li -->
+<!-- = link_to tag, tag_path(tag) -->
+<!-- (#{articles.size}) -->
+<!-- %h2 By Year -->
+<!-- %ol -->
+<!-- - blog.articles.group_by {|a| a.date.year }.each do |year, articles| -->
+<!-- %li -->
+<!-- = link_to year, blog_year_path(year) -->
+<!-- (#{articles.size}) -->
+
