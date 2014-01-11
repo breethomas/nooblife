@@ -59,7 +59,13 @@ GEM
       sprockets (~> 2.1)
       sprockets-helpers (~> 1.0.0)
       sprockets-sass (~> 1.0.0)
+    middleman-syntax (1.2.1)
+      middleman-core (~> 3.0)
+      rouge (~> 0.3.0)
+    mini_portile (0.5.2)
     multi_json (1.8.4)
+    nokogiri (1.6.1)
+      mini_portile (~> 0.5.0)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -69,6 +75,9 @@ GEM
       ffi (>= 0.5.0)
     rb-kqueue (0.2.0)
       ffi (>= 0.5.0)
+    redcarpet (3.0.0)
+    rouge (0.3.10)
+      thor
     sass (3.2.13)
     sprockets (2.10.1)
       hike (~> 1.2)
@@ -96,3 +105,6 @@ DEPENDENCIES
   middleman (~> 3.2.1)
   middleman-blog (~> 3.2.0)
   middleman-gh-pages
+  middleman-syntax
+  nokogiri
+  redcarpet
