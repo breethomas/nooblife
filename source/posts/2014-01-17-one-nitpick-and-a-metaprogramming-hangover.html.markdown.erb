@@ -1,0 +1,153 @@
+---
+title: One Nitpick And Hello Metaprogramming
+tags:
+---
+
+![](<%= asset_path(:images, 'metaprogramming.png') %>)
+
+I am addicted to <a href= "http://exercism.io/" target= "blank">exercism.io</a>. As a noob, it’s proven an invaluable tool.
+And recently, while iterating through the <a href= "https://github.com/breethomas/exercisms/tree/master/ruby/space-age" target= "blank">“Space Age”</a> exercise,
+I was introduced to metaprogramming through a nitpick. The term metaprogramming tends to strike fear in the hearts of many a noob. And that was especially true
+for me - I mean seriously, I am barely writing my own codes, much less codes to code those codes (holy coding hangover Batman).
+
+And so...through many iterations of fantastic nitpicks by <a href= "https://github.com/artm" target= "blank">Artem Baguinski</a> and <a href= "https://github.com/bencates" target= "blank">Ben Cates</a>, and some individual pairing time with <a href= "https://github.com/kytrinyx", target= "blank">Katrina</a>,
+I managed to metaprogram my way out of the intergalactic mess I had created.
+
+Here is how it all began....
+Space Age is a little program that takes an argument of seconds and determines the corresponding "earth years age" for each of the planets in the solar system, which
+is based upon that planet's orbital period. So if I told you that someone were 2,329,871,239 seconds old, the program should calculate that person as 73.83 Earth-years old.
+But on Mars, that same person would only be 39.25 Earth-years old. (I am desperately hoping affordable space travel and interplanetary hopping is available when I reach my 70's)
+
+On an early iteration of the solution, I was simply passing each planet to a **years\_on** helper method. I knew it was repetitive, but wasn't sure how to handle the changing planets and 
+their corresponding orbital periods. Then, through a nitpick, it was suggested that I try the **define\_method** approach on the body of the **years\_on** method to generate 
+the code, and eliminate repetition.
+
+<% code("ruby") do %>
+
+class SpaceAge
+  attr_reader :seconds
+
+  def initialize(input_seconds)
+    @seconds = input_seconds.to_f
+  end
+
+  def on_earth
+    years_on(:earth)
+  end
+
+  def on_mercury
+    years_on(:mercury)
+  end
+
+  # And so on for all the other planets...
+
+  private
+
+  attr_reader :orbital_periods
+
+  def years_on(planet)
+    planet_orbital = orbital_periods[planet]
+    planet_seconds = planet_orbital * earth_seconds
+    (seconds/planet_seconds).round(2)
+  end
+
+  def earth_seconds
+    31557600.to_f
+  end
+
+  def orbital_periods
+      {
+      earth: 1,
+      mercury: 0.2408467,
+      # And the rest of the planets...
+    }
+  end
+end
+
+<% end %>
+
+Knowing absolutely nothing about the **define\_method**, I went a'Googlin'. And then naturally concocted the train-wreck below. And thank goodness, because 
+this is where the aha-moments started to manifest. You always learn from your mistakes, and this was certainly no different. 
+I was lacking an understanding of when, and in what order, the code was being run, which means I was creating redundancy. Specifically, I placed the **define\_method**, 
+which is a PRIVATE method of Module, in the class method **define\_on\_planet\_methods**. And to make it work, I had to get a little wonky with **self.class.send**, because 
+**define\_method** is a private method, I couldn't just call **self.class.define\_method**. Ouch.
+
+Effectively, I setup the program such that each time an instance of Space Age was created, I was generating the **define\_on#{planet}** methods per instance. When in
+fact, I should only ask the class to generate those **on_#{planet}** methods once. 
+
+<% code("ruby") do %>
+
+class SpaceAge
+  attr_reader :seconds
+
+  def initialize(input_seconds)
+    @seconds = input_seconds.to_f
+    define_on_planet_methods
+  end
+
+  private
+
+  attr_reader :orbital_periods
+
+  def define_on_planet_methods
+    orbital_periods.each_key do |planet|
+    self.class.send(:define_method, "on_#{planet}") {years_on(planet)}
+    end
+  end
+
+  def orbital_periods
+    {
+      earth: 1,
+      mercury: 0.2408467,
+      # And the rest of the planets...
+    }
+  end
+
+  def years_on(planet)
+    planet_orbital = orbital_periods[planet]
+    planet_seconds = planet_orbital * earth_seconds
+    (seconds/planet_seconds).round(2)
+  end
+
+  def earth_seconds
+    31557600.to_f
+  end
+end
+
+<% end %>
+
+And here is where I finally ended up. It took some pairing sessions with Katrina to work through each line of code and understand the order of execution. 
+When the program initializes, the "normal" methods, the def...end versions, are loaded up so to speak, meaning the program recognizes they exist, but doesn't use
+them until they are called. The initialize method on the other hand, loads/executes immediately, which makes sense. Any code that is not wrapped in a method, 
+also executes immediately. So in the below example, I moved my data hash top level to execute immediately, and then iterate through the hash
+to create the variables I would need for the **define\_method** generator in that block.
+
+This is a more concise, clear solution and I am now acutely aware that not everything needs to be wrapped in a def...end, and that I can dynamically create those instance methods 
+"on the fly". Yay noob-aha-moment! So one metaprogramming hangover down, I can honestly say I would do it again. It was a fun problem to solve and I learned a lot.
+
+<% code("ruby") do %>
+
+class SpaceAge
+  attr_reader :seconds
+
+    {
+      earth: 1.0,
+      mercury: 0.2408467,
+      venus: 0.61519726,
+      mars: 1.8808158,
+      jupiter: 11.862615,
+      saturn: 29.447498,
+      uranus: 84.016846,
+      neptune: 164.79132
+    }.each {|planet, planet_orbital|
+        planet_seconds = planet_orbital * 31_557_600
+        define_method("on_#{planet}") do
+          (seconds/planet_seconds).round(2)
+        end}
+
+  def initialize(input_seconds)
+    @seconds = input_seconds.to_f
+  end
+end
+
+<% end %>
