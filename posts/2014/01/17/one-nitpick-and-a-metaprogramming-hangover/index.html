@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Noob Life</title>
+    <meta charset='utf-8'>
+    <meta content='IE=edge;chrome=1' http-equiv='X-UA-Compatible'>
+    <link href="/stylesheets/app.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <section class='container'>
+      <header class='masthead'>
+        <a href='http://www.nooblife.com' title='Noob Life'>
+          <img src='/images/nooblife.png'>
+        </a>
+      </header>
+      <div id='main' role='main'>
+        <article>
+          <div class='date'>01/17/14</div>
+          <h2 class='title'>One Nitpick And Hello Metaprogramming</h2>
+          <div class='body'>
+            <p><img src="/images/metaprogramming.png" /></p>
+            
+            <p>I am addicted to <a href= "http://exercism.io/" target= "blank">exercism.io</a>. As a noob, it’s proven an invaluable tool.
+            And recently, while iterating through the <a href= "https://github.com/breethomas/exercisms/tree/master/ruby/space-age" target= "blank">“Space Age”</a> exercise,
+            I was introduced to metaprogramming through a nitpick. The term metaprogramming tends to strike fear in the hearts of many a noob. And that was especially true
+            for me - I mean seriously, I am barely writing my own codes, much less codes to code those codes (holy coding hangover Batman).</p>
+            
+            <p>And so...through many iterations of fantastic nitpicks by <a href= "https://github.com/artm" target= "blank">Artem Baguinski</a> and <a href= "https://github.com/bencates" target= "blank">Ben Cates</a>, and some individual pairing time with <a href= "https://github.com/kytrinyx", target= "blank">Katrina</a>,
+            I managed to metaprogram my way out of the intergalactic mess I had created.</p>
+            
+            <p>Here is how it all began....
+            Space Age is a little program that takes an argument of seconds and determines the corresponding &quot;earth years age&quot; for each of the planets in the solar system, which
+            is based upon that planet&#39;s orbital period. So if I told you that someone were 2,329,871,239 seconds old, the program should calculate that person as 73.83 Earth-years old.
+            But on Mars, that same person would only be 39.25 Earth-years old. (I am desperately hoping affordable space travel and interplanetary hopping is available when I reach my 70&#39;s)</p>
+            
+            <p>On an early iteration of the solution, I was simply passing each planet to a <strong>years_on</strong> helper method. I knew it was repetitive, but wasn&#39;t sure how to handle the changing planets and 
+            their corresponding orbital periods. Then, through a nitpick, it was suggested that I try the <strong>define_method</strong> approach on the body of the <strong>years_on</strong> method to generate 
+            the code, and eliminate repetition.</p>
+            
+            <pre class="highlight ruby"><table><tbody><tr><td class="gutter gl"><div class="lineno">1</div><div class="lineno">2</div><div class="lineno">3</div><div class="lineno">4</div><div class="lineno">5</div><div class="lineno">6</div><div class="lineno">7</div><div class="lineno">8</div><div class="lineno">9</div><div class="lineno">10</div><div class="lineno">11</div><div class="lineno">12</div><div class="lineno">13</div><div class="lineno">14</div><div class="lineno">15</div><div class="lineno">16</div><div class="lineno">17</div><div class="lineno">18</div><div class="lineno">19</div><div class="lineno">20</div><div class="lineno">21</div><div class="lineno">22</div><div class="lineno">23</div><div class="lineno">24</div><div class="lineno">25</div><div class="lineno">26</div><div class="lineno">27</div><div class="lineno">28</div><div class="lineno">29</div><div class="lineno">30</div><div class="lineno">31</div><div class="lineno">32</div><div class="lineno">33</div><div class="lineno">34</div><div class="lineno">35</div><div class="lineno">36</div><div class="lineno">37</div><div class="lineno">38</div><div class="lineno">39</div><div class="lineno">40</div><div class="lineno">41</div></td><td class="code">
+            <span class="k">class </span><span class="nc">SpaceAge</span>
+              <span class="kp">attr_reader</span> <span class="ss">:seconds</span>
+            
+              <span class="k">def </span><span class="nf">initialize</span><span class="p">(</span><span class="n">input_seconds</span><span class="p">)</span>
+                <span class="vi">@seconds</span> <span class="o">=</span> <span class="n">input_seconds</span><span class="nf">.to_f</span>
+              <span class="k">end</span>
+            
+              <span class="k">def </span><span class="nf">on_earth</span>
+                <span class="n">years_on</span><span class="p">(</span><span class="ss">:earth</span><span class="p">)</span>
+              <span class="k">end</span>
+            
+              <span class="k">def </span><span class="nf">on_mercury</span>
+                <span class="n">years_on</span><span class="p">(</span><span class="ss">:mercury</span><span class="p">)</span>
+              <span class="k">end</span>
+            
+              <span class="c1"># And so on for all the other planets...</span>
+            
+              <span class="kp">private</span>
+            
+              <span class="kp">attr_reader</span> <span class="ss">:orbital_periods</span>
+            
+              <span class="k">def </span><span class="nf">years_on</span><span class="p">(</span><span class="n">planet</span><span class="p">)</span>
+                <span class="n">planet_orbital</span> <span class="o">=</span> <span class="n">orbital_periods</span><span class="o">[</span><span class="n">planet</span><span class="o">]</span>
+                <span class="n">planet_seconds</span> <span class="o">=</span> <span class="n">planet_orbital</span> <span class="o">*</span> <span class="n">earth_seconds</span>
+                <span class="p">(</span><span class="n">seconds</span><span class="o">/</span><span class="n">planet_seconds</span><span class="p">)</span><span class="nf">.round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+              <span class="k">end</span>
+            
+              <span class="k">def </span><span class="nf">earth_seconds</span>
+                <span class="mi">31557600</span><span class="nf">.to_f</span>
+              <span class="k">end</span>
+            
+              <span class="k">def </span><span class="nf">orbital_periods</span>
+                  <span class="p">{</span>
+                  <span class="ss">earth: </span><span class="mi">1</span><span class="p">,</span>
+                  <span class="ss">mercury: </span><span class="mi">0</span><span class="o">.</span><span class="mi">2408467</span><span class="p">,</span>
+                  <span class="c1"># And the rest of the planets...</span>
+                <span class="p">}</span>
+              <span class="k">end</span>
+            <span class="k">end</span>
+            
+            </td></tr></tbody></table></pre>
+            
+            <p>Knowing absolutely nothing about the <strong>define_method</strong>, I went a&#39;Googlin&#39;. And then naturally concocted the train-wreck below. And thank goodness, because 
+            this is where the aha-moments started to manifest. You always learn from your mistakes, and this was certainly no different. 
+            I was lacking an understanding of when, and in what order, the code was being run, which means I was creating redundancy. Specifically, I placed the <strong>define_method</strong>, 
+            which is a PRIVATE method of Module, in the class method <strong>define_on_planet_methods</strong>. And to make it work, I had to get a little wonky with <strong>self.class.send</strong>, because 
+            <strong>define_method</strong> is a private method, I couldn&#39;t just call <strong>self.class.define_method</strong>. Ouch.</p>
+            
+            <p>Effectively, I setup the program such that each time an instance of Space Age was created, I was generating the <strong>define_on#{planet}</strong> methods per instance. When in
+            fact, I should only ask the class to generate those <strong>on_#{planet}</strong> methods once. </p>
+            
+            <pre class="highlight ruby"><table><tbody><tr><td class="gutter gl"><div class="lineno">1</div><div class="lineno">2</div><div class="lineno">3</div><div class="lineno">4</div><div class="lineno">5</div><div class="lineno">6</div><div class="lineno">7</div><div class="lineno">8</div><div class="lineno">9</div><div class="lineno">10</div><div class="lineno">11</div><div class="lineno">12</div><div class="lineno">13</div><div class="lineno">14</div><div class="lineno">15</div><div class="lineno">16</div><div class="lineno">17</div><div class="lineno">18</div><div class="lineno">19</div><div class="lineno">20</div><div class="lineno">21</div><div class="lineno">22</div><div class="lineno">23</div><div class="lineno">24</div><div class="lineno">25</div><div class="lineno">26</div><div class="lineno">27</div><div class="lineno">28</div><div class="lineno">29</div><div class="lineno">30</div><div class="lineno">31</div><div class="lineno">32</div><div class="lineno">33</div><div class="lineno">34</div><div class="lineno">35</div><div class="lineno">36</div><div class="lineno">37</div><div class="lineno">38</div></td><td class="code">
+            <span class="k">class </span><span class="nc">SpaceAge</span>
+              <span class="kp">attr_reader</span> <span class="ss">:seconds</span>
+            
+              <span class="k">def </span><span class="nf">initialize</span><span class="p">(</span><span class="n">input_seconds</span><span class="p">)</span>
+                <span class="vi">@seconds</span> <span class="o">=</span> <span class="n">input_seconds</span><span class="nf">.to_f</span>
+                <span class="n">define_on_planet_methods</span>
+              <span class="k">end</span>
+            
+              <span class="kp">private</span>
+            
+              <span class="kp">attr_reader</span> <span class="ss">:orbital_periods</span>
+            
+              <span class="k">def </span><span class="nf">define_on_planet_methods</span>
+                <span class="n">orbital_periods</span><span class="nf">.each_key</span> <span class="k">do</span> <span class="o">|</span><span class="n">planet</span><span class="o">|</span>
+                <span class="nb">self</span><span class="nf">.class.send</span><span class="p">(</span><span class="ss">:define_method</span><span class="p">,</span> <span class="s2">&quot;on_</span><span class="si">#{</span><span class="n">planet</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="p">{</span><span class="n">years_on</span><span class="p">(</span><span class="n">planet</span><span class="p">)}</span>
+                <span class="k">end</span>
+              <span class="k">end</span>
+            
+              <span class="k">def </span><span class="nf">orbital_periods</span>
+                <span class="p">{</span>
+                  <span class="ss">earth: </span><span class="mi">1</span><span class="p">,</span>
+                  <span class="ss">mercury: </span><span class="mi">0</span><span class="o">.</span><span class="mi">2408467</span><span class="p">,</span>
+                  <span class="c1"># And the rest of the planets...</span>
+                <span class="p">}</span>
+              <span class="k">end</span>
+            
+              <span class="k">def </span><span class="nf">years_on</span><span class="p">(</span><span class="n">planet</span><span class="p">)</span>
+                <span class="n">planet_orbital</span> <span class="o">=</span> <span class="n">orbital_periods</span><span class="o">[</span><span class="n">planet</span><span class="o">]</span>
+                <span class="n">planet_seconds</span> <span class="o">=</span> <span class="n">planet_orbital</span> <span class="o">*</span> <span class="n">earth_seconds</span>
+                <span class="p">(</span><span class="n">seconds</span><span class="o">/</span><span class="n">planet_seconds</span><span class="p">)</span><span class="nf">.round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+              <span class="k">end</span>
+            
+              <span class="k">def </span><span class="nf">earth_seconds</span>
+                <span class="mi">31557600</span><span class="nf">.to_f</span>
+              <span class="k">end</span>
+            <span class="k">end</span>
+            
+            </td></tr></tbody></table></pre>
+            
+            <p>And here is where I finally ended up. It took some pairing sessions with Katrina to work through each line of code and understand the order of execution. 
+            When the program initializes, the &quot;normal&quot; methods, the def...end versions, are loaded up so to speak, meaning the program recognizes they exist, but doesn&#39;t use
+            them until they are called. The initialize method on the other hand, loads/executes immediately, which makes sense. Any code that is not wrapped in a method, 
+            also executes immediately. So in the below example, I moved my data hash top level to execute immediately, and then iterate through the hash
+            to create the variables I would need for the <strong>define_method</strong> generator in that block.</p>
+            
+            <p>This is a more concise, clear solution and I am now acutely aware that not everything needs to be wrapped in a def...end, and that I can dynamically create those instance methods 
+            &quot;on the fly&quot;. Yay noob-aha-moment! So one metaprogramming hangover down, I can honestly say I would do it again. It was a fun problem to solve and I learned a lot.</p>
+            
+            <pre class="highlight ruby"><table><tbody><tr><td class="gutter gl"><div class="lineno">1</div><div class="lineno">2</div><div class="lineno">3</div><div class="lineno">4</div><div class="lineno">5</div><div class="lineno">6</div><div class="lineno">7</div><div class="lineno">8</div><div class="lineno">9</div><div class="lineno">10</div><div class="lineno">11</div><div class="lineno">12</div><div class="lineno">13</div><div class="lineno">14</div><div class="lineno">15</div><div class="lineno">16</div><div class="lineno">17</div><div class="lineno">18</div><div class="lineno">19</div><div class="lineno">20</div><div class="lineno">21</div><div class="lineno">22</div><div class="lineno">23</div><div class="lineno">24</div></td><td class="code">
+            <span class="k">class </span><span class="nc">SpaceAge</span>
+              <span class="kp">attr_reader</span> <span class="ss">:seconds</span>
+            
+                <span class="p">{</span>
+                  <span class="ss">earth: </span><span class="mi">1</span><span class="o">.</span><span class="mi">0</span><span class="p">,</span>
+                  <span class="ss">mercury: </span><span class="mi">0</span><span class="o">.</span><span class="mi">2408467</span><span class="p">,</span>
+                  <span class="ss">venus: </span><span class="mi">0</span><span class="o">.</span><span class="mi">61519726</span><span class="p">,</span>
+                  <span class="ss">mars: </span><span class="mi">1</span><span class="o">.</span><span class="mi">8808158</span><span class="p">,</span>
+                  <span class="ss">jupiter: </span><span class="mi">11</span><span class="o">.</span><span class="mi">862615</span><span class="p">,</span>
+                  <span class="ss">saturn: </span><span class="mi">29</span><span class="o">.</span><span class="mi">447498</span><span class="p">,</span>
+                  <span class="ss">uranus: </span><span class="mi">84</span><span class="o">.</span><span class="mo">016</span><span class="mi">846</span><span class="p">,</span>
+                  <span class="ss">neptune: </span><span class="mi">164</span><span class="o">.</span><span class="mi">79132</span>
+                <span class="p">}</span><span class="nf">.each</span> <span class="p">{</span><span class="o">|</span><span class="n">planet</span><span class="p">,</span> <span class="n">planet_orbital</span><span class="o">|</span>
+                    <span class="n">planet_seconds</span> <span class="o">=</span> <span class="n">planet_orbital</span> <span class="o">*</span> <span class="mi">31_557_600</span>
+                    <span class="n">define_method</span><span class="p">(</span><span class="s2">&quot;on_</span><span class="si">#{</span><span class="n">planet</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="k">do</span>
+                      <span class="p">(</span><span class="n">seconds</span><span class="o">/</span><span class="n">planet_seconds</span><span class="p">)</span><span class="nf">.round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+                    <span class="k">end</span><span class="p">}</span>
+            
+              <span class="k">def </span><span class="nf">initialize</span><span class="p">(</span><span class="n">input_seconds</span><span class="p">)</span>
+                <span class="vi">@seconds</span> <span class="o">=</span> <span class="n">input_seconds</span><span class="nf">.to_f</span>
+              <span class="k">end</span>
+            <span class="k">end</span>
+            
+            </td></tr></tbody></table></pre>
+          </div>
+          <div class='block-divider'></div>
+        </article>
+      </div>
+    </section>
+    <footer>
+      <a href='https://github.com/breethomas' target='_blank' title='Bree Thomas - Github'>
+        <img src='/images/github-10-32.png'>
+      </a>
+    </footer>
+  </body>
+</html>
+<!-- %aside -->
+<!-- %h2 Recent Articles -->
+<!-- %ol -->
+<!-- - blog.articles[0...10].each do |article| -->
+<!-- %li -->
+<!-- = link_to article.title, article -->
+<!-- %span= article.date.strftime('%b %e') -->
+<!-- %h2 Tags -->
+<!-- %ol -->
+<!-- - blog.tags.each do |tag, articles| -->
+<!-- %li -->
+<!-- = link_to tag, tag_path(tag) -->
+<!-- (#{articles.size}) -->
+<!-- %h2 By Year -->
+<!-- %ol -->
+<!-- - blog.articles.group_by {|a| a.date.year }.each do |year, articles| -->
+<!-- %li -->
+<!-- = link_to year, blog_year_path(year) -->
+<!-- (#{articles.size}) -->
+

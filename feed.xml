@@ -5,10 +5,302 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2013-11-01T00:00:00Z</updated>
+  <updated>2014-05-07T00:00:00Z</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>Boom Goes the Nuke. The 'TDD is Dead' Play-by-Play</title>
+    <link rel="alternate" href="/posts/2014/05/07/Boom-Goes-the-Nuke.-The-TDD-is-Dead-Play-by-Play/"/>
+    <id>/posts/2014/05/07/Boom-Goes-the-Nuke.-The-TDD-is-Dead-Play-by-Play/</id>
+    <published>2014-05-07T00:00:00Z</published>
+    <updated>2014-05-07T00:00:00Z</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img src="/images/nukes.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;At Rails Conference 2014, David Heinemeier Hansson (DHH) delivered the kickoff Keynote, where in one fail swoop, he killed &lt;a href="http://en.wikipedia.org/wiki/Test-driven_development", target="blank"&gt;Test Driven Development (TDD)&lt;/a&gt;, essentially proclaiming TDD as no more than a cheap diet fad that ruins the design of software and also makes you feel FAT (not PHAT). In fact, if you practice TDD, you are probably just another irrational zealot.&lt;/p&gt;
+
+&lt;p&gt;Okay - maybe not exactly like that, but DHH’s delivery was polarizing to say the least, and consequently, the above is what a lot of people &lt;em&gt;heard&lt;/em&gt;. They heard, “TDD is Dead”, or “Testing is Dead&amp;quot;, and as such, he might as well have nuked the crowd with an atomic bomb, because the fallout is reverberating.&lt;/p&gt;
+
+&lt;p&gt;With this post, I aim to provide you with a summarized play-by-play to get you headed down the path of your own research and opinion formation. For a noob like me, the dramatic ping-pong amongst some of the bigger players in the community has been illuminating, and at times, hysterical. I LOVE the passion and fervor. Whatever your opinion, both sides bring up great fodder for debate — prickly in delivery or not.&lt;/p&gt;
+
+&lt;p&gt;Let’s get this party started&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Tuesday, April 22&lt;/em&gt;: And the shot rang out&amp;hellip; 
+&lt;a href="https://www.youtube.com/watch?v=9LfmrkyP81M", target="blank"&gt;DHH Rails Conference 2014 Keynote Speech&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It was a fine sunny day in Chicago, not too cold, but still damn windy. People were packing into the Sheraton Ballroom for the opening Keynote from DHH. The anticipation and skepticism were heavy in the room, because for many, DHH evokes a love or hate reaction, and apparently he is known for &amp;quot;stirring the pot.&amp;quot; Any pot. He is a pot-stirrer-extraordinaire, as I am to understand from those who know him personally, or have been around him in the community over the years.&lt;/p&gt;
+
+&lt;p&gt;In his keynote, DHH presents the argument that Computer Science and Writing Software are very different, and that too many of us associate (or attempt to associate) incorrectly, which has resulted in some unintended consequences, including perpetuating the impostor syndrome, and fostering a stifling Dogma of code laws and practices.  He positions that in the world of writing software, many of us are too concerned with being a “scientist”. The result is that we constantly seek to invoke rules, laws, universal truths that mandate how things should be authored to qualify as good, “right” code. A doctrine for judging the clean code from the “dirty code”. &lt;/p&gt;
+
+&lt;p&gt;He posits that as writers of software, when we perpetuate a collection of beliefs or practices mistakenly regarded as being based on the scientific method, we are in fact perpetuating Pseudoscience, and Pseudoscience is ridiculous. To help drive home this point, he turns our attention to a well-known Pseudoscience, The Diet Fad Industry, posting a slide with a variety of popular and recent fad diets that have swept the nation over the years. He pokes fun at the weak methods employed by diet fad gurus, and then quickly comments on the connection between diet fads and software developers,&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;I think diets are incredibly similar to most software methodology approaches. They all sort of espouse ‘I have the truth. What you need to get slim and healthy is the &amp;#39;10-day Green Smoothie Cleanse!’&lt;/em&gt;
+&lt;em&gt;People want to be told how they can cheat the basics. I think software development is exactly like that. Developers are exactly like people trying to lose 10lbs.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;DHH explains that we all struggle with portions of our code bases that we want to clean up. A nip here, a tuck there, a refactor of all the dirty pieces. And that notion of dirty code, much like an annoying 10lbs, drives us toward taking up the latest gospel pattern or practice, because we are lured by the promise of instantly transforming dirty code into clean code. We often erroneously believe if we just follow a specific set of 10 commandments, then we will write clean code bases till the cows come home. And he further explains there are plenty of developers willing to espouse the next great all slimming, super fat trimming edict for your coding to follow and for you to vehemently enlist and advocate, as any true believing zealot should. &lt;/p&gt;
+
+&lt;p&gt;And then&amp;hellip; with an ever so gentle pull of the trigger&amp;hellip;he says,&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;The most popular pattern for making people feel shitty about their code, and shitty about themselves, and shitty about their path through programming is... TDD.
+TDD is the most successful software diet of all times.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;BOOM. NUKED.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This holy hell of a blasphemous war cry takes place approximately 24 minutes into what is a one-hour long presentation.
+Boom went the room - you could feel it, hear it, and certainly see it as people took to their phones to blow up the twitter sphere at the same time.
+The rest of the speech hardly matters at this point, because this is where he killed TDD.&lt;/p&gt;
+
+&lt;p&gt;I’m not even going to finish summarizing the rest of his talk, because you should &lt;em&gt;JUST WATCH IT&lt;/em&gt;. There are some really great nuggets and fruitful explanation for his positioning, which are important as you navigate through the rest of the plays below.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;April 23 and onward&lt;/em&gt;: The Mushroom Cloud Forms&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Chaotic tweets ensue with many hailing DHH’s shot to TDD, while others are red-faced and forming lynch mobs. Quite a few are making jokes for both sides. Quickly a volley of opinions are exchanged through tweets and blogs. I found the blog posts to be the most productive and so I’ve placed the more notable opinions in chronological order below, and I highly recommend reading through them to grasp the whole story. I also worked in a few tweets because well&amp;hellip; some of these cats really do put on a good show. 
+This certainly doesn’t encompass all things said, or even all viewpoints, and apologies in advance for missing any key posts (just hit me up on Twitter, &lt;a href="https://twitter.com/BreeThomas33", target="blank"&gt;@BreeThomas33&lt;/a&gt;, if I need to add one), but I’m hoping this provides a path for people (noobs especially of course) to hear the arguments from some of the more seasoned and vocal seniors in the community.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;April 23&lt;/em&gt;: &lt;a href="https://twitter.com/dhh", target="blank"&gt;DHH&lt;/a&gt; posts &lt;a href="http://david.heinemeierhansson.com/2014/tdd-is-dead-long-live-testing.html", target="blank"&gt;“TDD is Dead. Long Live Testing” as a followup to his keynote.&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Test-first fundamentalism is like abstinence-only sex ed: An unrealistic, ineffective morality campaign for self-loathing and shaming.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;April 24&lt;/em&gt;: &lt;a href="https://twitter.com/dhh", target="blank"&gt;DHH&lt;/a&gt; appears annoyed with the twitter-sphere.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/images/dhh-tweet.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;April 25&lt;/em&gt;: &lt;a href="https://twitter.com/unclebobmartin", target="blank"&gt;Uncle Bob&lt;/a&gt; responds to “TDD is Dead. Long Live Testing” with &lt;a href="http://blog.8thlight.com/uncle-bob/2014/04/25/MonogamousTDD.html", target="blank"&gt;“Monogamous TDD”&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;When a blog begins like this&amp;hellip; &amp;#39;Test-first fundamentalism is like abstinence-only sex ed: An unrealistic, ineffective morality campaign for self-loathing and shaming.&amp;#39;&amp;hellip;you have to wonder if the rest of the post can recover its credibility, or whether it will continue as an unreasoned rant.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;April 29&lt;/em&gt;: &lt;a href="https://twitter.com/dhh", target="blank"&gt;DHH&lt;/a&gt; posts &lt;a href="http://david.heinemeierhansson.com/2014/test-induced-design-damage.html", target="blank"&gt;“Test-induced Design Damage”&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;When you stop driving your design first, and primarily, through your tests, your eyes will open to much more interesting perspectives on the code. The answer to how can I make it better, is how can I make it clearer, not how can I test it faster or more isolated.&lt;/em&gt;
+&lt;em&gt;The design integrity of your system is far more important than being able to test it any particular layer. Stop obsessing about unit tests, embrace backfilling of tests when you&amp;#39;re happy with the design, and strive for overall system clarity as your principle pursuit.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;April 30&lt;/em&gt;: &lt;a href="https://twitter.com/unclebobmartin", target="blank"&gt;Uncle Bob&lt;/a&gt; posts &lt;a href="http://blog.8thlight.com/uncle-bob/2014/04/30/When-tdd-does-not-work.html", target="blank"&gt;&amp;quot;When TDD Doesn’t Work”&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;So, now we have two places where TDD is impractical or inappropriate. The physical boundary, and the layer just in front of that boundary that requires human interaction to fiddle with the results. Are there any other areas where tests aren&amp;#39;t appropriate? Yes. The test code itself. I don&amp;#39;t mean the actual unit tests. I mean the support code for those unit tests. The FitNesse fixtures, or the cucumber steps, or the Object Mothers, or the Test Doubles. You don&amp;#39;t have to write tests for those because the actual unit tests and the production code are the tests for those pieces of code. That&amp;#39;s really about it. For pretty much everything else you can write tests, and you can write them first. For pretty much everything else, you can use TDD.&lt;/em&gt;
+&lt;em&gt;From my point of view, exporting logic is nothing more than separating concerns. In this case we separate the code that must be fiddled from the code that can be tested. Those two domains of code will change for very different reasons and at very different rates; so it is wise to separate them. Separating them is good design.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;April 30&lt;/em&gt;: &lt;a href="https://twitter.com/dhh", target="blank"&gt;DHH&lt;/a&gt; posts &lt;a href="http://david.heinemeierhansson.com/2014/slow-database-test-fallacy.html", target="blank"&gt;“Slow Database Test Fallacy&amp;quot;&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;So please. Don&amp;#39;t pervert your architecture in order to prematurely optimize for the performance characteristics of the mid-nineties. Embrace the awesome power of modern computers, and revel in the clarity of a code base unharmed by test-induced design damage.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;April 30&lt;/em&gt;: &lt;a href="https://twitter.com/garybernhardt", target="blank"&gt;Gary Bernhardt&lt;/a&gt; posts &lt;a href="https://www.destroyallsoftware.com/blog/2014/tdd-straw-men-and-rhetoric", target="blank"&gt;“TDD, Straw Men, and Rhetoric”&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;In a blog post called Slow database test fallacy, David Heinemeier Hansson, the creator of Rails, begins: &amp;#39;The classical definition of a unit test in TDD lore is one that doesn&amp;#39;t touch the database.&amp;#39;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;First, you can immediately tell that this piece of writing is going to be heavily rhetorical. He refers to &amp;quot;TDD lore&amp;quot; as opposed to, say, &amp;quot;TDD practice&amp;quot;. By using the word &amp;quot;lore&amp;quot;, he positions it as subjective, unreliable, mythological. Second, that sentence is false. Isolation from the database, or anything else, is generally done with mocks, but mocks didn&amp;#39;t even exist when TDD was rediscovered by Kent Beck in 1994-1995. They were introduced at XP2000 in a paper called Endo-Testing: Unit Testing with Mock Objects, and it took a long time after that for them to gain popularity. Their role in software development was still being fleshed out in 2004 when Mock Roles, Not Objects was published.&lt;/em&gt;
+&lt;em&gt;Classical TDD does not involve mocking or other forms of synthetic isolation by definition. We even use the term &amp;quot;classical TDD&amp;quot; to mean &amp;quot;TDD without isolation.&lt;/em&gt;
+&lt;em&gt;David used the word &amp;quot;classical&amp;quot; not because it&amp;#39;s correct, but because it implies &amp;quot;old&amp;quot;. This is the beginning of a series of rhetorical techniques that he uses to incorrectly associate isolated unit testing with &amp;quot;oldness”.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;Gary then announces his post on the subject.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/images/gary-tweet-1.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Gary then announces his post on the subject specifically to DHH (them&amp;#39;s fightin&amp;#39; words)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/images/gary-tweet-2.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;And that odd fur-ball Aaron Patterson adequately describes the situation at hand with this&lt;/em&gt; &lt;a href="http://i.imgur.com/xW5Gusy.gif", target="blank"&gt;gif&lt;/a&gt;.*&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/images/tenderlove.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;May 1&lt;/em&gt;: &lt;a href="https://twitter.com/unclebobmartin", target="blank"&gt;Uncle Bob&lt;/a&gt; posts &lt;a href="http://blog.8thlight.com/uncle-bob/2014/05/01/Design-Damage.html", target="blank"&gt;“Test Induced Design Damage?”&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Recently, I read Test Induced Design Damage by DHH. In it he refers to Jim&amp;#39;s talk, and then asserts that Jim was damaging the design of his application. That&amp;#39;s not what I saw. Not at all. What I saw was a tightly interwoven mass of rails and business logic being teased apart by a master of his craft. The result was, frankly, beautiful. At the end of his talk, the students began to realize all the options this new structure gave them. You can see Jim&amp;#39;s eyes light up as he sees that his message has gotten through, and as he amplifies their observations with even more of his own.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;May 2&lt;/em&gt;: &lt;a href="https://twitter.com/unclebobmartin", target="blank"&gt;Uncle Bob&lt;/a&gt; posts &lt;a href="http://blog.8thlight.com/uncle-bob/2014/05/02/ProfessionalismAndTDD.html", target="blank"&gt;“Professionalism and TDD (Reprise)”&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;If I am right... If TDD is as significant to software as hand-washing was to medicine and is instrumental in pulling us back from the brink of that looming catastrophe, then Kent Beck will be hailed a hero, and TDD will carry the full weight of professionalism. After that, those who refuse to practice TDD will be excused from the ranks of professional programmers. It would not surprise me if, one day, TDD had the force of law behind it.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And finally - with many the tweet activity still high on the subject, ThoughtWorks steps up to the plate as mediator by hosting a public google hangout on May 9, 11:00AM EST, where Martin Fowler, Kent Beck, and DHH will debate the pros and cons of TDD. (So tune in…)&lt;/p&gt;
+
+&lt;p&gt;The abstract as follows:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;TDD as One True Way&amp;quot; versus &amp;quot;TDD as devil-spawned tempter&amp;quot; is not a productive contrast. Most of us have similar goals for development: confidence, impact, challenge, belonging. Test-driven development is one path toward these goals, but there are many other paths. This conversation in six parts explores tradeoffs in development, places TDD in those tradeoffs, and gives you perspective with which you can decide for yourself how you want to program.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I will be there. Virtual front row with my popcorn in hand and channeling my inner MJ (thank you &lt;a href="https://twitter.com/tenderlove", target="blank"&gt;@tenderlove&lt;/a&gt;).&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>One Nitpick And Hello Metaprogramming</title>
+    <link rel="alternate" href="/posts/2014/01/17/one-nitpick-and-a-metaprogramming-hangover/"/>
+    <id>/posts/2014/01/17/one-nitpick-and-a-metaprogramming-hangover/</id>
+    <published>2014-01-17T00:00:00Z</published>
+    <updated>2014-01-17T00:00:00Z</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img src="/images/metaprogramming.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;I am addicted to &lt;a href= "http://exercism.io/" target= "blank"&gt;exercism.io&lt;/a&gt;. As a noob, it’s proven an invaluable tool.
+And recently, while iterating through the &lt;a href= "https://github.com/breethomas/exercisms/tree/master/ruby/space-age" target= "blank"&gt;“Space Age”&lt;/a&gt; exercise,
+I was introduced to metaprogramming through a nitpick. The term metaprogramming tends to strike fear in the hearts of many a noob. And that was especially true
+for me - I mean seriously, I am barely writing my own codes, much less codes to code those codes (holy coding hangover Batman).&lt;/p&gt;
+
+&lt;p&gt;And so...through many iterations of fantastic nitpicks by &lt;a href= "https://github.com/artm" target= "blank"&gt;Artem Baguinski&lt;/a&gt; and &lt;a href= "https://github.com/bencates" target= "blank"&gt;Ben Cates&lt;/a&gt;, and some individual pairing time with &lt;a href= "https://github.com/kytrinyx", target= "blank"&gt;Katrina&lt;/a&gt;,
+I managed to metaprogram my way out of the intergalactic mess I had created.&lt;/p&gt;
+
+&lt;p&gt;Here is how it all began....
+Space Age is a little program that takes an argument of seconds and determines the corresponding &amp;quot;earth years age&amp;quot; for each of the planets in the solar system, which
+is based upon that planet&amp;#39;s orbital period. So if I told you that someone were 2,329,871,239 seconds old, the program should calculate that person as 73.83 Earth-years old.
+But on Mars, that same person would only be 39.25 Earth-years old. (I am desperately hoping affordable space travel and interplanetary hopping is available when I reach my 70&amp;#39;s)&lt;/p&gt;
+
+&lt;p&gt;On an early iteration of the solution, I was simply passing each planet to a &lt;strong&gt;years_on&lt;/strong&gt; helper method. I knew it was repetitive, but wasn&amp;#39;t sure how to handle the changing planets and 
+their corresponding orbital periods. Then, through a nitpick, it was suggested that I try the &lt;strong&gt;define_method&lt;/strong&gt; approach on the body of the &lt;strong&gt;years_on&lt;/strong&gt; method to generate 
+the code, and eliminate repetition.&lt;/p&gt;
+
+&lt;pre class="highlight ruby"&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="gutter gl"&gt;&lt;div class="lineno"&gt;1&lt;/div&gt;&lt;div class="lineno"&gt;2&lt;/div&gt;&lt;div class="lineno"&gt;3&lt;/div&gt;&lt;div class="lineno"&gt;4&lt;/div&gt;&lt;div class="lineno"&gt;5&lt;/div&gt;&lt;div class="lineno"&gt;6&lt;/div&gt;&lt;div class="lineno"&gt;7&lt;/div&gt;&lt;div class="lineno"&gt;8&lt;/div&gt;&lt;div class="lineno"&gt;9&lt;/div&gt;&lt;div class="lineno"&gt;10&lt;/div&gt;&lt;div class="lineno"&gt;11&lt;/div&gt;&lt;div class="lineno"&gt;12&lt;/div&gt;&lt;div class="lineno"&gt;13&lt;/div&gt;&lt;div class="lineno"&gt;14&lt;/div&gt;&lt;div class="lineno"&gt;15&lt;/div&gt;&lt;div class="lineno"&gt;16&lt;/div&gt;&lt;div class="lineno"&gt;17&lt;/div&gt;&lt;div class="lineno"&gt;18&lt;/div&gt;&lt;div class="lineno"&gt;19&lt;/div&gt;&lt;div class="lineno"&gt;20&lt;/div&gt;&lt;div class="lineno"&gt;21&lt;/div&gt;&lt;div class="lineno"&gt;22&lt;/div&gt;&lt;div class="lineno"&gt;23&lt;/div&gt;&lt;div class="lineno"&gt;24&lt;/div&gt;&lt;div class="lineno"&gt;25&lt;/div&gt;&lt;div class="lineno"&gt;26&lt;/div&gt;&lt;div class="lineno"&gt;27&lt;/div&gt;&lt;div class="lineno"&gt;28&lt;/div&gt;&lt;div class="lineno"&gt;29&lt;/div&gt;&lt;div class="lineno"&gt;30&lt;/div&gt;&lt;div class="lineno"&gt;31&lt;/div&gt;&lt;div class="lineno"&gt;32&lt;/div&gt;&lt;div class="lineno"&gt;33&lt;/div&gt;&lt;div class="lineno"&gt;34&lt;/div&gt;&lt;div class="lineno"&gt;35&lt;/div&gt;&lt;div class="lineno"&gt;36&lt;/div&gt;&lt;div class="lineno"&gt;37&lt;/div&gt;&lt;div class="lineno"&gt;38&lt;/div&gt;&lt;div class="lineno"&gt;39&lt;/div&gt;&lt;div class="lineno"&gt;40&lt;/div&gt;&lt;div class="lineno"&gt;41&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;
+&lt;span class="k"&gt;class &lt;/span&gt;&lt;span class="nc"&gt;SpaceAge&lt;/span&gt;
+  &lt;span class="kp"&gt;attr_reader&lt;/span&gt; &lt;span class="ss"&gt;:seconds&lt;/span&gt;
+
+  &lt;span class="k"&gt;def &lt;/span&gt;&lt;span class="nf"&gt;initialize&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;input_seconds&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="vi"&gt;@seconds&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;input_seconds&lt;/span&gt;&lt;span class="nf"&gt;.to_f&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+
+  &lt;span class="k"&gt;def &lt;/span&gt;&lt;span class="nf"&gt;on_earth&lt;/span&gt;
+    &lt;span class="n"&gt;years_on&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;:earth&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+
+  &lt;span class="k"&gt;def &lt;/span&gt;&lt;span class="nf"&gt;on_mercury&lt;/span&gt;
+    &lt;span class="n"&gt;years_on&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;:mercury&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+
+  &lt;span class="c1"&gt;# And so on for all the other planets...&lt;/span&gt;
+
+  &lt;span class="kp"&gt;private&lt;/span&gt;
+
+  &lt;span class="kp"&gt;attr_reader&lt;/span&gt; &lt;span class="ss"&gt;:orbital_periods&lt;/span&gt;
+
+  &lt;span class="k"&gt;def &lt;/span&gt;&lt;span class="nf"&gt;years_on&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;planet&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;planet_orbital&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;orbital_periods&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;planet&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;planet_seconds&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;planet_orbital&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;earth_seconds&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;seconds&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;planet_seconds&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="nf"&gt;.round&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+
+  &lt;span class="k"&gt;def &lt;/span&gt;&lt;span class="nf"&gt;earth_seconds&lt;/span&gt;
+    &lt;span class="mi"&gt;31557600&lt;/span&gt;&lt;span class="nf"&gt;.to_f&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+
+  &lt;span class="k"&gt;def &lt;/span&gt;&lt;span class="nf"&gt;orbital_periods&lt;/span&gt;
+      &lt;span class="p"&gt;{&lt;/span&gt;
+      &lt;span class="ss"&gt;earth: &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+      &lt;span class="ss"&gt;mercury: &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;2408467&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+      &lt;span class="c1"&gt;# And the rest of the planets...&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/pre&gt;
+
+&lt;p&gt;Knowing absolutely nothing about the &lt;strong&gt;define_method&lt;/strong&gt;, I went a&amp;#39;Googlin&amp;#39;. And then naturally concocted the train-wreck below. And thank goodness, because 
+this is where the aha-moments started to manifest. You always learn from your mistakes, and this was certainly no different. 
+I was lacking an understanding of when, and in what order, the code was being run, which means I was creating redundancy. Specifically, I placed the &lt;strong&gt;define_method&lt;/strong&gt;, 
+which is a PRIVATE method of Module, in the class method &lt;strong&gt;define_on_planet_methods&lt;/strong&gt;. And to make it work, I had to get a little wonky with &lt;strong&gt;self.class.send&lt;/strong&gt;, because 
+&lt;strong&gt;define_method&lt;/strong&gt; is a private method, I couldn&amp;#39;t just call &lt;strong&gt;self.class.define_method&lt;/strong&gt;. Ouch.&lt;/p&gt;
+
+&lt;p&gt;Effectively, I setup the program such that each time an instance of Space Age was created, I was generating the &lt;strong&gt;define_on#{planet}&lt;/strong&gt; methods per instance. When in
+fact, I should only ask the class to generate those &lt;strong&gt;on_#{planet}&lt;/strong&gt; methods once. &lt;/p&gt;
+
+&lt;pre class="highlight ruby"&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="gutter gl"&gt;&lt;div class="lineno"&gt;1&lt;/div&gt;&lt;div class="lineno"&gt;2&lt;/div&gt;&lt;div class="lineno"&gt;3&lt;/div&gt;&lt;div class="lineno"&gt;4&lt;/div&gt;&lt;div class="lineno"&gt;5&lt;/div&gt;&lt;div class="lineno"&gt;6&lt;/div&gt;&lt;div class="lineno"&gt;7&lt;/div&gt;&lt;div class="lineno"&gt;8&lt;/div&gt;&lt;div class="lineno"&gt;9&lt;/div&gt;&lt;div class="lineno"&gt;10&lt;/div&gt;&lt;div class="lineno"&gt;11&lt;/div&gt;&lt;div class="lineno"&gt;12&lt;/div&gt;&lt;div class="lineno"&gt;13&lt;/div&gt;&lt;div class="lineno"&gt;14&lt;/div&gt;&lt;div class="lineno"&gt;15&lt;/div&gt;&lt;div class="lineno"&gt;16&lt;/div&gt;&lt;div class="lineno"&gt;17&lt;/div&gt;&lt;div class="lineno"&gt;18&lt;/div&gt;&lt;div class="lineno"&gt;19&lt;/div&gt;&lt;div class="lineno"&gt;20&lt;/div&gt;&lt;div class="lineno"&gt;21&lt;/div&gt;&lt;div class="lineno"&gt;22&lt;/div&gt;&lt;div class="lineno"&gt;23&lt;/div&gt;&lt;div class="lineno"&gt;24&lt;/div&gt;&lt;div class="lineno"&gt;25&lt;/div&gt;&lt;div class="lineno"&gt;26&lt;/div&gt;&lt;div class="lineno"&gt;27&lt;/div&gt;&lt;div class="lineno"&gt;28&lt;/div&gt;&lt;div class="lineno"&gt;29&lt;/div&gt;&lt;div class="lineno"&gt;30&lt;/div&gt;&lt;div class="lineno"&gt;31&lt;/div&gt;&lt;div class="lineno"&gt;32&lt;/div&gt;&lt;div class="lineno"&gt;33&lt;/div&gt;&lt;div class="lineno"&gt;34&lt;/div&gt;&lt;div class="lineno"&gt;35&lt;/div&gt;&lt;div class="lineno"&gt;36&lt;/div&gt;&lt;div class="lineno"&gt;37&lt;/div&gt;&lt;div class="lineno"&gt;38&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;
+&lt;span class="k"&gt;class &lt;/span&gt;&lt;span class="nc"&gt;SpaceAge&lt;/span&gt;
+  &lt;span class="kp"&gt;attr_reader&lt;/span&gt; &lt;span class="ss"&gt;:seconds&lt;/span&gt;
+
+  &lt;span class="k"&gt;def &lt;/span&gt;&lt;span class="nf"&gt;initialize&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;input_seconds&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="vi"&gt;@seconds&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;input_seconds&lt;/span&gt;&lt;span class="nf"&gt;.to_f&lt;/span&gt;
+    &lt;span class="n"&gt;define_on_planet_methods&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+
+  &lt;span class="kp"&gt;private&lt;/span&gt;
+
+  &lt;span class="kp"&gt;attr_reader&lt;/span&gt; &lt;span class="ss"&gt;:orbital_periods&lt;/span&gt;
+
+  &lt;span class="k"&gt;def &lt;/span&gt;&lt;span class="nf"&gt;define_on_planet_methods&lt;/span&gt;
+    &lt;span class="n"&gt;orbital_periods&lt;/span&gt;&lt;span class="nf"&gt;.each_key&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;planet&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
+    &lt;span class="nb"&gt;self&lt;/span&gt;&lt;span class="nf"&gt;.class.send&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;:define_method&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;on_&lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;planet&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;years_on&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;planet&lt;/span&gt;&lt;span class="p"&gt;)}&lt;/span&gt;
+    &lt;span class="k"&gt;end&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+
+  &lt;span class="k"&gt;def &lt;/span&gt;&lt;span class="nf"&gt;orbital_periods&lt;/span&gt;
+    &lt;span class="p"&gt;{&lt;/span&gt;
+      &lt;span class="ss"&gt;earth: &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+      &lt;span class="ss"&gt;mercury: &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;2408467&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+      &lt;span class="c1"&gt;# And the rest of the planets...&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+
+  &lt;span class="k"&gt;def &lt;/span&gt;&lt;span class="nf"&gt;years_on&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;planet&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;planet_orbital&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;orbital_periods&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;planet&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;planet_seconds&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;planet_orbital&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;earth_seconds&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;seconds&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;planet_seconds&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="nf"&gt;.round&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+
+  &lt;span class="k"&gt;def &lt;/span&gt;&lt;span class="nf"&gt;earth_seconds&lt;/span&gt;
+    &lt;span class="mi"&gt;31557600&lt;/span&gt;&lt;span class="nf"&gt;.to_f&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/pre&gt;
+
+&lt;p&gt;And here is where I finally ended up. It took some pairing sessions with Katrina to work through each line of code and understand the order of execution. 
+When the program initializes, the &amp;quot;normal&amp;quot; methods, the def...end versions, are loaded up so to speak, meaning the program recognizes they exist, but doesn&amp;#39;t use
+them until they are called. The initialize method on the other hand, loads/executes immediately, which makes sense. Any code that is not wrapped in a method, 
+also executes immediately. So in the below example, I moved my data hash top level to execute immediately, and then iterate through the hash
+to create the variables I would need for the &lt;strong&gt;define_method&lt;/strong&gt; generator in that block.&lt;/p&gt;
+
+&lt;p&gt;This is a more concise, clear solution and I am now acutely aware that not everything needs to be wrapped in a def...end, and that I can dynamically create those instance methods 
+&amp;quot;on the fly&amp;quot;. Yay noob-aha-moment! So one metaprogramming hangover down, I can honestly say I would do it again. It was a fun problem to solve and I learned a lot.&lt;/p&gt;
+
+&lt;pre class="highlight ruby"&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="gutter gl"&gt;&lt;div class="lineno"&gt;1&lt;/div&gt;&lt;div class="lineno"&gt;2&lt;/div&gt;&lt;div class="lineno"&gt;3&lt;/div&gt;&lt;div class="lineno"&gt;4&lt;/div&gt;&lt;div class="lineno"&gt;5&lt;/div&gt;&lt;div class="lineno"&gt;6&lt;/div&gt;&lt;div class="lineno"&gt;7&lt;/div&gt;&lt;div class="lineno"&gt;8&lt;/div&gt;&lt;div class="lineno"&gt;9&lt;/div&gt;&lt;div class="lineno"&gt;10&lt;/div&gt;&lt;div class="lineno"&gt;11&lt;/div&gt;&lt;div class="lineno"&gt;12&lt;/div&gt;&lt;div class="lineno"&gt;13&lt;/div&gt;&lt;div class="lineno"&gt;14&lt;/div&gt;&lt;div class="lineno"&gt;15&lt;/div&gt;&lt;div class="lineno"&gt;16&lt;/div&gt;&lt;div class="lineno"&gt;17&lt;/div&gt;&lt;div class="lineno"&gt;18&lt;/div&gt;&lt;div class="lineno"&gt;19&lt;/div&gt;&lt;div class="lineno"&gt;20&lt;/div&gt;&lt;div class="lineno"&gt;21&lt;/div&gt;&lt;div class="lineno"&gt;22&lt;/div&gt;&lt;div class="lineno"&gt;23&lt;/div&gt;&lt;div class="lineno"&gt;24&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;
+&lt;span class="k"&gt;class &lt;/span&gt;&lt;span class="nc"&gt;SpaceAge&lt;/span&gt;
+  &lt;span class="kp"&gt;attr_reader&lt;/span&gt; &lt;span class="ss"&gt;:seconds&lt;/span&gt;
+
+    &lt;span class="p"&gt;{&lt;/span&gt;
+      &lt;span class="ss"&gt;earth: &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+      &lt;span class="ss"&gt;mercury: &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;2408467&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+      &lt;span class="ss"&gt;venus: &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;61519726&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+      &lt;span class="ss"&gt;mars: &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;8808158&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+      &lt;span class="ss"&gt;jupiter: &lt;/span&gt;&lt;span class="mi"&gt;11&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;862615&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+      &lt;span class="ss"&gt;saturn: &lt;/span&gt;&lt;span class="mi"&gt;29&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;447498&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+      &lt;span class="ss"&gt;uranus: &lt;/span&gt;&lt;span class="mi"&gt;84&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mo"&gt;016&lt;/span&gt;&lt;span class="mi"&gt;846&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+      &lt;span class="ss"&gt;neptune: &lt;/span&gt;&lt;span class="mi"&gt;164&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;79132&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="nf"&gt;.each&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;planet&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;planet_orbital&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
+        &lt;span class="n"&gt;planet_seconds&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;planet_orbital&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mi"&gt;31_557_600&lt;/span&gt;
+        &lt;span class="n"&gt;define_method&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;on_&lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;planet&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+          &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;seconds&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;planet_seconds&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="nf"&gt;.round&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="k"&gt;end&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+
+  &lt;span class="k"&gt;def &lt;/span&gt;&lt;span class="nf"&gt;initialize&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;input_seconds&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="vi"&gt;@seconds&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;input_seconds&lt;/span&gt;&lt;span class="nf"&gt;.to_f&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/pre&gt;
+</content>
+  </entry>
   <entry>
     <title>Sinatra Round Two - Group Date</title>
     <link rel="alternate" href="/posts/2013/11/01/Sinatra-Round-2-Group-Date/"/>
@@ -18,7 +310,7 @@
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;img alt="" src="/images/two-spacegals.png" /&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img src="/images/two-spacegals.png" /&gt;&lt;/p&gt;
 
 &lt;p&gt;So for our second round with Sinatra, it was a group date. Four to be
 exact. It was a far more valuable experience this
@@ -28,26 +320,22 @@ synapses finally started to click on day two of the project.&lt;/p&gt;
 &lt;p&gt;Highlights include:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Area of most growth - definitely testing. Exposure to &lt;a href="https://github.com/jnicklas/capybara" target="blank"&gt;Capybara&lt;/a&gt; and
+&lt;li&gt;&lt;p&gt;Area of most growth - definitely testing. Exposure to &lt;a href=
+"https://github.com/jnicklas/capybara" target= "blank"&gt;Capybara&lt;/a&gt; and
 overall just starting to think with a “test first” mindset. I’m not
 quite yet the testing artist I hope to be, but at least I’m able to
 think through some ideas on where/how/what to test first when
-starting to construct a feature. &lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Area of most lightbulbs - generally in how things work in
-Sinatra, especially around routes and parameters/hashes. &lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Area of most confusion - setting up the database method and trying to
+starting to construct a feature. &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Area of most lightbulbs - generally in how things work in
+Sinatra, especially around routes and parameters/hashes. &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Area of most confusion - setting up the database method and trying to
 account for a test db along with a dev db. I would like to spend a
 little more time in understanding how best to architect the different
-environments and run automated testing across the whole app.&lt;/p&gt;
-  &lt;/li&gt;
+environments and run automated testing across the whole app.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;If I had another week, I might try to rebuild &lt;a href="http://www.aha-method.com/" target="blank"&gt;The Aha Method&lt;/a&gt; website,
+&lt;p&gt;If I had another week, I might try to rebuild &lt;a href=
+'http://www.aha-method.com/' target= "blank"&gt;The Aha Method&lt;/a&gt; website,
 which was something I built a long time ago (with a lot of help). It is
 small enough that I think I could tackle it on my own, as well as
 enhance the contact feature and the bratblog summary feature (which
@@ -62,7 +350,7 @@ Additionally, Rolen took on several nicknames, including
 “Papa-Rolen”, “The Godfather” and “Ironic Overlord” (rolen.io), aka
 &lt;em&gt;Fierce Cat on a Fire Breathing Unicorn&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="" src="/images/rolen-io.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/images/rolen-io.png" /&gt;&lt;/p&gt;
 </content>
   </entry>
   <entry>
@@ -74,25 +362,26 @@ Additionally, Rolen took on several nicknames, including
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;img alt="" src="/images/sinatra_girl.png" /&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img src="/images/sinatra_girl.png" /&gt;&lt;/p&gt;
 
-&lt;p&gt;My first date with &lt;a href="http://www.sinatrarb.com/" target="blank"&gt;Sinatra&lt;/a&gt; was a hot mess. And that damn tipped over
+&lt;p&gt;My first date with &lt;a href= "http://www.sinatrarb.com/" target= "blank"&gt;Sinatra&lt;/a&gt; was a hot mess. And that damn tipped over
 rocks glass for error messages is enough to drive a girl to drink. &lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="" src="/images/rocks-glass.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/images/rocks-glass.png" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Overly excited about building a web app, due to having some
 cursory experience with a little front-end dev, I decided to
 approach the Sinatra tutorial with guns a blazin’ and 
-follow the tutorial using &lt;a href="http://haml.info/" target="blank"&gt;Haml&lt;/a&gt; instead of ERB (short for "Embedded RuBy", not to be confused with "&lt;a href="http://www.epicrapbattlesofhistory.com/" target="blank"&gt;Epic Rap Battles&lt;/a&gt;"). I mean, how hard could
+follow the tutorial using &lt;a href= "http://haml.info/" target= "blank"&gt;Haml&lt;/a&gt; instead of ERB (short for &amp;quot;Embedded RuBy&amp;quot;, not to be confused with &amp;quot;&lt;a href= 'http://www.epicrapbattlesofhistory.com/' target= "blank"&gt;Epic Rap Battles&lt;/a&gt;&amp;quot;). I mean, how hard could
 it be? Talk about kicking my own ass… sheesh. &lt;/p&gt;
 
 &lt;p&gt;First and foremost,
-&lt;a href="http://tutorials.jumpstartlab.com/projects/idea_box.html" target="blank"&gt;Ideabox&lt;/a&gt; introduced the use of forms, which I had zero experience with
+&lt;a href= "http://tutorials.jumpstartlab.com/projects/idea_box.html"
+target= "blank"&gt;Ideabox&lt;/a&gt; introduced the use of forms, which I had zero experience with
 and found them to be a tiny beast of weirdness all their own. Then,
 layer on top of that translating ERB instructions from the tutorial
 real-time into Haml had me and the spilled glass of Jack w/ water
-and three ice-cubes (the real &lt;a href="http://jrcx.wordpress.com/2012/10/04/sinatrajd/" target="blank"&gt;Sinatra's poison &lt;/a&gt; of choice) in lock step for the duration of the exercise.
+and three ice-cubes (the real &lt;a href= "http://jrcx.wordpress.com/2012/10/04/sinatrajd/" target= "blank"&gt;Sinatra&amp;#39;s poison &lt;/a&gt; of choice) in lock step for the duration of the exercise.
 And I’m a vodka girl, so it wasn’t a pleasant experience,
 although spilling booze in any context is generally an unpleasant
 faux-pas. &lt;/p&gt;
@@ -101,7 +390,8 @@ faux-pas. &lt;/p&gt;
 there is that, but I certainly wasn’t proud of it and absolutely none
 of it was test driven. &lt;/p&gt;
 
-&lt;p&gt;I did however, learn a lot. And the post exercise where we sat with &lt;a href="https://github.com/jcasimir?source=cc" target="blank"&gt;Jeff&lt;/a&gt;
+&lt;p&gt;I did however, learn a lot. And the post exercise where we sat with &lt;a
+href= "https://github.com/jcasimir?source=cc" target= "blank"&gt;Jeff&lt;/a&gt;
 and worked through how to approach testing with Ideabox was hugely
 beneficial. That said, I would most definitely repeat the exercise,
 with TDD first and foremost, as well hopefully having some time to add
@@ -115,7 +405,8 @@ complete in its entirety with an extension. &lt;strong&gt;Kazaam&lt;/strong&gt;!
 Source in Denver. It was like speed-dating, but with code-pairing.
 And it was fantastic! All of my fellow students proved to be much
 better dates than Sinatra, if for no other reason than they didn’t keep
-spilling liquor on me. I especially enjoyed the &lt;a href="http://en.wikipedia.org/wiki/Groundhog_Day_(film)" target="blank"&gt;Groundhog Day&lt;/a&gt; approach,
+spilling liquor on me. I especially enjoyed the &lt;a href=
+"http://en.wikipedia.org/wiki/Groundhog_Day_(film)" target= "blank"&gt;Groundhog Day&lt;/a&gt; approach,
 where we kept repeating the same exercise over and over as we changed
 pairs. Even though the exercise was the same, the change in pairs
 and the application of learning from one session to the next really
@@ -133,40 +424,40 @@ writing some code that worked. And that always feels great.&lt;/p&gt;
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;img alt="" src="/images/woman_couch.png" /&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img src="/images/woman_couch.png" /&gt;&lt;/p&gt;
 
-&lt;p&gt;So we just finished our first of three focus weeks at the &lt;a href="http://www.jumpstartlab.com/" target="blank"&gt;JumpstartLab&lt;/a&gt;, and
-it could not have come at a better time – well, except maybe a little
-earlier. Seriously - I think I've been desperate for a focus week. A
+&lt;p&gt;So we just finished our first of three focus weeks at the &lt;a href= "http://www.jumpstartlab.com/" target= "blank"&gt;JumpstartLab&lt;/a&gt;, and
+it could not have come at a better time -- well, except maybe a little
+earlier. Seriously - I think I&amp;#39;ve been desperate for a focus week. A
 break in the fierce treading of water that is the daily grind of class
 instruction and looming project deliverables, due dates, and
 overall feeling of having no idea what the hell I am doing. &lt;/p&gt;
 
 &lt;p&gt;Focus week was the invitation to pump the brakes and slow down long enough
 to ensure we were grounded in the code we were writing. In such that
-even if it wasn't a lot of code, it was code we understood. So I
+even if it wasn&amp;#39;t a lot of code, it was code we understood. So I
 feel better about a lot of the fundamentals, in terms of understanding
 how to work with hashes, arrays, strings, methods, and most
-importantly, a better understanding of the ruby object model. I'm not
-sure I "mastered" anything, or that I even know what that might look
+importantly, a better understanding of the ruby object model. I&amp;#39;m not
+sure I &amp;quot;mastered&amp;quot; anything, or that I even know what that might look
 like, but I do feel there was some progression and that I was able to
 take a moment to just breathe (insert momentary sigh of relief here). &lt;/p&gt;
 
 &lt;p&gt;Also, we were divided into groups of similar skill level and the
-smaller group atmosphere was super &lt;a href="http://www.themovierad.com/#!/Home" target="blank"&gt;RAD&lt;/a&gt;. I don't necessarily think it is required for the full 24 weeks of the
-course, but I think it's needed a LOT more. The small group approach
+smaller group atmosphere was super &lt;a href= "http://www.themovierad.com/#!/Home" target= "blank"&gt;RAD&lt;/a&gt;. I don&amp;#39;t necessarily think it is required for the full 24 weeks of the
+course, but I think it&amp;#39;s needed a LOT more. The small group approach
 created a dynamic where I actually felt like I was learning &lt;em&gt;with&lt;/em&gt;
 people, as opposed to just trying to hang on for dear life to the coat
 tails of those who seem light years ahead of me. Whether or not they are in fact light years ahead of me is irrelevant. Perception is reality and as a noob on the Planet of Programming, sometimes this is my reality:&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="" src="/images/scream.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/images/scream.png" /&gt;&lt;/p&gt;
 
 &lt;p&gt;I also found the small groups were more vocal in class, and I believe that is because we all felt safer with
 one another, in that our contributions and questions were useful for
-everyone. &lt;br /&gt;
+everyone.&lt;br&gt;
 Next week we start web applications. I have no expectations,
 other than I would really like to finish the project on time. I assume
-it will be hard, but I'm hoping it doesn't feel impossible like
+it will be hard, but I&amp;#39;m hoping it doesn&amp;#39;t feel impossible like
 some of the last projects.&lt;/p&gt;
 
 &lt;p&gt;And lastly, even though I feel a little better right now, I know
@@ -187,19 +478,19 @@ my noob face into the ground. &lt;/p&gt;
     </author>
     <content type="html">&lt;p&gt;&lt;img alt="baby" src="/images/baby.png" /&gt;&lt;/p&gt;
 
-&lt;p&gt;I am currently reading a book from the &lt;a href="http://www.jumpstartlab.com/" target="blank"&gt;JumpstartLab&lt;/a&gt; reading list called
-&lt;a href="http://pragprog.com/book/ahptl/pragmatic-thinking-and-learning" target="blank"&gt;Pragmatic Thinking and Learning: Refactor your Wetware&lt;/a&gt;.
+&lt;p&gt;I am currently reading a book from the &lt;a href= "http://www.jumpstartlab.com/" target= "blank"&gt;JumpstartLab&lt;/a&gt; reading list called
+&lt;a href= "http://pragprog.com/book/ahptl/pragmatic-thinking-and-learning" target= "blank"&gt;Pragmatic Thinking and Learning: Refactor your Wetware&lt;/a&gt;.
 The author, Andy Hunt, dives into how our brains are
 wired, and how to apply ourselves in learning new skills. It is written
 with programming in mind, but uses examples and analogies that span
 other professional and artistic disciplines. Andy claims:&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;In this book you'll learn how to:&lt;br /&gt;&lt;br /&gt;
-+ Use the Dreyfus Model of Skill Acquisition to become more expert&lt;br /&gt;
-+ Leverage the architecture of the brain to strengthen different thinking modes&lt;br /&gt;
-+ Avoid common "known bugs" in your mind&lt;br /&gt;
-+ Learn more deliberately and more effectively&lt;br /&gt;
+&lt;p&gt;In this book you&amp;#39;ll learn how to:&lt;br&gt;&lt;br&gt;
++ Use the Dreyfus Model of Skill Acquisition to become more expert&lt;br&gt;
++ Leverage the architecture of the brain to strengthen different thinking modes&lt;br&gt;
++ Avoid common &amp;quot;known bugs&amp;quot; in your mind&lt;br&gt;
++ Learn more deliberately and more effectively&lt;br&gt;
 + Manage knowledge more efficiently  &lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -207,19 +498,19 @@ other professional and artistic disciplines. Andy claims:&lt;/p&gt;
 
 &lt;p&gt;I am only on chapter three, but actually feeling like there might be hope
 for me yet. He talks at length about the Dreyfus model of Skill
-Acquistion in the first three chapters. I won't go into detail on the
-model, but it's worth investigating further if you are so inclined.&lt;/p&gt;
+Acquistion in the first three chapters. I won&amp;#39;t go into detail on the
+model, but it&amp;#39;s worth investigating further if you are so inclined.&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;I will, however, provide you with
-&lt;a href="https://github.com/kytrinyx?source=cc" target="blank"&gt;Katrina's&lt;/a&gt; succinct and apt
+&lt;p&gt;I will, however, provide you with
+&lt;a href= "https://github.com/kytrinyx?source=cc" target= "blank"&gt;Katrina&amp;#39;s&lt;/a&gt; succinct and apt
 summation of the scale, with the following excerpt from her talk on 
-&lt;a href="http://kytrinyx.com/blog/hacking-passion" target="blank"&gt;Hacking Passion&lt;/a&gt;:&lt;br /&gt;  &lt;br /&gt;
-+ Novice: where you know nothing&lt;br /&gt;
+&lt;a href= "http://kytrinyx.com/blog/hacking-passion" target= "blank"&gt;Hacking Passion&lt;/a&gt;:&lt;br&gt;&lt;br&gt;
++ Novice: where you know nothing&lt;br&gt;
 + Advanced beginner: where you still suck, but you start seeing what
-this might be about&lt;br /&gt;
-+ Competent: where you can start getting shit done&lt;br /&gt;
-+ Proficient: where you get shit done really well&lt;br /&gt;
+this might be about&lt;br&gt;
++ Competent: where you can start getting shit done&lt;br&gt;
++ Proficient: where you get shit done really well&lt;br&gt;
 + Expert: where the shit you get done seems like magic to pretty much
 everyone else.  &lt;/p&gt;
 &lt;/blockquote&gt;
@@ -251,31 +542,31 @@ needs and state of mind of the novice. Mind you, it is never a
 one-size-fits-all declaration, but I can attest that some of us in
 school are of the particular novice persuasion who would respond better,
 and grow faster, with just a few extras bolted onto the first few weeks
-of school. Ideas include:&lt;br /&gt; &lt;br /&gt;
+of school. Ideas include:&lt;br&gt;&lt;br&gt;
  + &lt;strong&gt;Study Hall&lt;/strong&gt;. An hour or so, 2-3 times per week, before or after class
    to focus on the fundamentals. To revisit again and again the concepts
-   and problems presented in class that are escaping us.&lt;br /&gt;&lt;br /&gt;
+   and problems presented in class that are escaping us.&lt;br&gt;&lt;br&gt;
  + &lt;strong&gt;Mentors at the Start&lt;/strong&gt;. If it were possible to introduce a few mentors
    at the start of the program, this would be amazing. Sometimes, we
    masochistic novices struggle too long and too hard, to the point of
    total breakdown, and having additional resources who were available
    more frequently, especially in the off-hours, could really make the
    difference in our ability to jump the big hurdles and gain much needed
-   confidence.&lt;br /&gt;&lt;br /&gt;
+   confidence.&lt;br&gt;&lt;br&gt;
  + &lt;strong&gt;Baby Step Tutorials&lt;/strong&gt;. Smaller chunks of learning exercises
    that force us to repeat the little things and apply them
-   progressively, in a building block format.&lt;br /&gt;&lt;br /&gt;
+   progressively, in a building block format.&lt;br&gt;&lt;br&gt;
  + &lt;strong&gt;Invitation to Pace&lt;/strong&gt;. This, for me, is critical. While it is true we
-   don't receive traditional grades in gSchool, I spent the first three
-   weeks beating myself up because I couldn't finish everything, and the
-   first project, I can't even say I really started. And I was beginning
+   don&amp;#39;t receive traditional grades in gSchool, I spent the first three
+   weeks beating myself up because I couldn&amp;#39;t finish everything, and the
+   first project, I can&amp;#39;t even say I really started. And I was beginning
    to lose faith in the process, and even worse, myself. And I found the
    messages around the importance of finishing the first few projects to
    be rather inconsistent. And it was hard to prioritize what I should
    be focused on in order to avoid being left behind, or miss something
    critical to my success. Might seem trivial in hindsight, but as a
-   noob, I don't know what I don't know, and even the little things get
-   overwhelming.&lt;br /&gt; &lt;br /&gt;
+   noob, I don&amp;#39;t know what I don&amp;#39;t know, and even the little things get
+   overwhelming.&lt;br&gt;&lt;br&gt;
  + &lt;strong&gt;More Pictures&lt;/strong&gt;. The diagrams and the whiteboards help a lot. Even when
    its just writing code on the wall with markers, it is wonderful. I
    think this is because it forces everyone to slow down. For the novice
@@ -284,10 +575,10 @@ of school. Ideas include:&lt;br /&gt; &lt;br /&gt;
    instruction and that often causes unintended consequences of not
    really listening (because we are panicked about keeping up), or just
    checking out because we miss one step and suddenly find ourselves in
-   no-man's land without a clue as to what question to even ask.&lt;br /&gt; &lt;/p&gt;
+   no-man&amp;#39;s land without a clue as to what question to even ask.&lt;br&gt; &lt;/p&gt;
 
-&lt;p&gt;That's all I got for right now. I only read three chapters, however
-Katrina contributed a very thorough analysis on the Jumpstart Blog &lt;a href="http://jumpstartlab.com/news/archives/2013/10/03/pragmatic-learning-at-gschool-part-i" target="blank"&gt;Jumpstart Blog&lt;/a&gt;, so you should definitely check it out. There will be more to come as we
+&lt;p&gt;That&amp;#39;s all I got for right now. I only read three chapters, however
+Katrina contributed a very thorough analysis on the Jumpstart Blog &lt;a href= "http://jumpstartlab.com/news/archives/2013/10/03/pragmatic-learning-at-gschool-part-i" target="blank"&gt;Jumpstart Blog&lt;/a&gt;, so you should definitely check it out. There will be more to come as we
 finish the book over the next couple weeks.&lt;/p&gt;
 
 &lt;p&gt;And the best part about reading this book, is that JumpstartLab is reading it
@@ -296,110 +587,6 @@ areas listed above in order to make me successful. There is no question
 this is the right place for learning to program and they are the best at
 what they do (and because they listen and care, my desire to punch them
 in the nose on a couple early occasions was only fleeting). &lt;/p&gt;
-
-</content>
-  </entry>
-  <entry>
-    <title>I have No Idea What I Am Doing</title>
-    <link rel="alternate" href="/posts/2013/09/20/I-Have-No-Idea-What-I-Am-Doing/"/>
-    <id>/posts/2013/09/20/I-Have-No-Idea-What-I-Am-Doing/</id>
-    <published>2013-09-20T00:00:00Z</published>
-    <updated>2013-09-20T00:00:00Z</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;img alt="" src="/images/woman_computer.png" /&gt;&lt;/p&gt;
-
-&lt;p&gt;I tried to insert ERB tags into haml.&lt;/p&gt;
-
-&lt;p&gt;I got myself up "git creek" when I thought it would be cool to rebase. &lt;/p&gt;
-
-&lt;p&gt;I lost hours googling my googles because I didn't understand the
-answers to my noob questions.&lt;/p&gt;
-
-&lt;p&gt;I have yet to fully complete an in-class exercise during the allocated
-class time @ the &lt;a href="http://www.jumpstartlab.com/" target="blank"&gt;JumpstartLab&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I wrote eight lines of code for Event Reporter (first "real" project
-assigned with a one week turn time.) and none of them did
-anything.&lt;/p&gt;
-
-&lt;p&gt;I spent an hour and a half relentlessly trying to debug a functional
-file that wasn't even the file I was requiring in the test suite I was
-working from - seriously.&lt;/p&gt;
-
-&lt;p&gt;I never use the damn Pomodoro, even though I know I should, and my psyche suffers for it after I have spent a ridiculous number of hours looking at my monitor with no break.&lt;/p&gt;
-
-&lt;p&gt;I have no idea what I am doing. And some of these things are just plain
-hysterical. I'll get there. Just keep swimming…&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Desperately Seeking Noob Status</title>
-    <link rel="alternate" href="/posts/2013/09/13/Desperately-Seeking-Noob-Status/"/>
-    <id>/posts/2013/09/13/Desperately-Seeking-Noob-Status/</id>
-    <published>2013-09-13T00:00:00Z</published>
-    <updated>2013-09-13T00:00:00Z</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;img alt="noob-nerd" src="/images/noob-nerd.png" /&gt;&lt;/p&gt;
-
-&lt;p&gt;At the start of my learning to program adventure, my mentor referred to
-me as a noob in an email exchange. I made the mistake of
-correcting his spelling, assuming he must have meant newb, as in newbie,
-one "new" to a particular practice or profession. I even sent him an urban dictionary
-link as added support and humorous reference material. &lt;/p&gt;
-
-&lt;p&gt;His response: &lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;Wow. Just wow. You just solidified your "noob" status majorly. First off
-only dumb marketing people use the term "newb" and then go on to
-actually quote something from Urban Dictionary. Seriously, you are
-quoting "Urban Dictionary"? It's so lame I won't even click on the link.
-You're "noob" status just hit a whole new level. I'm not even sure there
-is a term for it. And by the way, if you were a gamer (which obviously
-you are not), you would be referred to as "n00b". That's right double
-zero style. This is fucking unbelievable.&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Huh. So apparently I was already way behind in this whole programming
-thing and I hadn't even started? Hello Humble.&lt;/p&gt;
-
-&lt;p&gt;I learned a lot from my mentor over the next several months, his bark
-being infinitely more worse than his bite, and came to the quick
-realization that once-a-week-instruction, with some practice in the
-evenings after my day job, was not going to cut it. I needed to find a way
-to do this full time, because I was hooked and desperately seeking noob
-status - for real.&lt;/p&gt;
-
-&lt;p&gt;Enter the opportunity with &lt;a href="http://www.jumpstartlab.com" target="blank"&gt;JumpstartLab&lt;/a&gt;. I applied, I stalked the founder, and
-I was a mild train wreck at the interview, which all combined, magically resulted
-in my acceptance (because apparently they don't read your writing
-sample). And so began my noob life. In week one, or rather week zero,
-they started us off with an initiation in improv, Ruby in 100 minutes and a
-tidal wave of tutorials to prep us for the deep end of the ocean, which
-is weird, because I was pretty sure I was already in the deep end of the
-ocean when I quit my career (marketing of course) of 10 years so I could learn to code.&lt;/p&gt;
-
-&lt;p&gt;A small handful of highlights from the week:&lt;br /&gt;
-+  string manipulation&lt;br /&gt;
-+  using ERB for templating&lt;br /&gt;
-+  reading data from CSV files&lt;br /&gt;
-+  rotating arrays&lt;br /&gt;
-+  zipping hashes&lt;br /&gt;
-+  middleman blog creation&lt;br /&gt;
-+  installing and using gems&lt;br /&gt;
-+  setting up programming environment&lt;br /&gt;
-+  conditional branching and looping  &lt;/p&gt;
-
-&lt;p&gt;And while I would love to expound on all of the above, or even provide
-the full list of topics covered in week zero, there is just no
-fucking way. I am buried. Or to keep with the ocean metaphor,
-drowning. I never expected this noob life to be easy, but right now, I
-am just hoping I can actually keep swimming for the next six months.&lt;/p&gt;
-
 </content>
   </entry>
 </feed>
