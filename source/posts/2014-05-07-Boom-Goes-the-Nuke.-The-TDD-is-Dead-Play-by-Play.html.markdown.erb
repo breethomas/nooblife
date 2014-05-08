@@ -1,0 +1,108 @@
+---
+title: Boom Goes the Nuke. The 'TDD is Dead' Play-by-Play
+---
+
+![](<%= asset_path(:images, 'nukes.png') %>)
+
+At Rails Conference 2014, David Heinemeier Hansson (DHH) delivered the kickoff Keynote, where in one fail swoop, he killed <a href="http://en.wikipedia.org/wiki/Test-driven_development", target="blank">Test Driven Development (TDD)</a>, essentially proclaiming TDD as no more than a cheap diet fad that ruins the design of software and also makes you feel FAT (not PHAT). In fact, if you practice TDD, you are probably just another irrational zealot.
+
+Okay - maybe not exactly like that, but DHH’s delivery was polarizing to say the least, and consequently, the above is what a lot of people *heard*. They heard, “TDD is Dead”, or “Testing is Dead", and as such, he might as well have nuked the crowd with an atomic bomb, because the fallout is reverberating.
+
+With this post, I aim to provide you with a summarized play-by-play to get you headed down the path of your own research and opinion formation. For a noob like me, the dramatic ping-pong amongst some of the bigger players in the community has been illuminating, and at times, hysterical. I LOVE the passion and fervor. Whatever your opinion, both sides bring up great fodder for debate — prickly in delivery or not.
+
+Let’s get this party started&hellip;
+
+*Tuesday, April 22*: And the shot rang out&hellip; 
+<a href="https://www.youtube.com/watch?v=9LfmrkyP81M", target="blank">DHH Rails Conference 2014 Keynote Speech</a>
+
+It was a fine sunny day in Chicago, not too cold, but still damn windy. People were packing into the Sheraton Ballroom for the opening Keynote from DHH. The anticipation and skepticism were heavy in the room, because for many, DHH evokes a love or hate reaction, and apparently he is known for "stirring the pot." Any pot. He is a pot-stirrer-extraordinaire, as I am to understand from those who know him personally, or have been around him in the community over the years.
+
+In his keynote, DHH presents the argument that Computer Science and Writing Software are very different, and that too many of us associate (or attempt to associate) incorrectly, which has resulted in some unintended consequences, including perpetuating the impostor syndrome, and fostering a stifling Dogma of code laws and practices.  He positions that in the world of writing software, many of us are too concerned with being a “scientist”. The result is that we constantly seek to invoke rules, laws, universal truths that mandate how things should be authored to qualify as good, “right” code. A doctrine for judging the clean code from the “dirty code”. 
+
+He posits that as writers of software, when we perpetuate a collection of beliefs or practices mistakenly regarded as being based on the scientific method, we are in fact perpetuating Pseudoscience, and Pseudoscience is ridiculous. To help drive home this point, he turns our attention to a well-known Pseudoscience, The Diet Fad Industry, posting a slide with a variety of popular and recent fad diets that have swept the nation over the years. He pokes fun at the weak methods employed by diet fad gurus, and then quickly comments on the connection between diet fads and software developers,
+
+> *I think diets are incredibly similar to most software methodology approaches. They all sort of espouse ‘I have the truth. What you need to get slim and healthy is the '10-day Green Smoothie Cleanse!’*
+> *People want to be told how they can cheat the basics. I think software development is exactly like that. Developers are exactly like people trying to lose 10lbs.*
+
+DHH explains that we all struggle with portions of our code bases that we want to clean up. A nip here, a tuck there, a refactor of all the dirty pieces. And that notion of dirty code, much like an annoying 10lbs, drives us toward taking up the latest gospel pattern or practice, because we are lured by the promise of instantly transforming dirty code into clean code. We often erroneously believe if we just follow a specific set of 10 commandments, then we will write clean code bases till the cows come home. And he further explains there are plenty of developers willing to espouse the next great all slimming, super fat trimming edict for your coding to follow and for you to vehemently enlist and advocate, as any true believing zealot should. 
+
+And then&hellip; with an ever so gentle pull of the trigger&hellip;he says,
+
+> *The most popular pattern for making people feel shitty about their code, and shitty about themselves, and shitty about their path through programming is... TDD.
+TDD is the most successful software diet of all times.*
+
+**BOOM. NUKED.**
+
+This holy hell of a blasphemous war cry takes place approximately 24 minutes into what is a one-hour long presentation.
+Boom went the room - you could feel it, hear it, and certainly see it as people took to their phones to blow up the twitter sphere at the same time.
+The rest of the speech hardly matters at this point, because this is where he killed TDD.
+
+I’m not even going to finish summarizing the rest of his talk, because you should *JUST WATCH IT*. There are some really great nuggets and fruitful explanation for his positioning, which are important as you navigate through the rest of the plays below.
+
+*April 23 and onward*: The Mushroom Cloud Forms&hellip;
+
+Chaotic tweets ensue with many hailing DHH’s shot to TDD, while others are red-faced and forming lynch mobs. Quite a few are making jokes for both sides. Quickly a volley of opinions are exchanged through tweets and blogs. I found the blog posts to be the most productive and so I’ve placed the more notable opinions in chronological order below, and I highly recommend reading through them to grasp the whole story. I also worked in a few tweets because well&hellip; some of these cats really do put on a good show. 
+This certainly doesn’t encompass all things said, or even all viewpoints, and apologies in advance for missing any key posts (just hit me up on Twitter, <a href="https://twitter.com/BreeThomas33", target="blank">@BreeThomas33</a>, if I need to add one), but I’m hoping this provides a path for people (noobs especially of course) to hear the arguments from some of the more seasoned and vocal seniors in the community.
+
+*April 23*: <a href="https://twitter.com/dhh", target="blank">DHH</a> posts <a href="http://david.heinemeierhansson.com/2014/tdd-is-dead-long-live-testing.html", target="blank">“TDD is Dead. Long Live Testing” as a followup to his keynote.</a>
+
+> *Test-first fundamentalism is like abstinence-only sex ed: An unrealistic, ineffective morality campaign for self-loathing and shaming.*
+
+*April 24*: <a href="https://twitter.com/dhh", target="blank">DHH</a> appears annoyed with the twitter-sphere.
+
+![](<%= asset_path(:images, 'dhh-tweet.png') %>)
+
+*April 25*: <a href="https://twitter.com/unclebobmartin", target="blank">Uncle Bob</a> responds to “TDD is Dead. Long Live Testing” with <a href="http://blog.8thlight.com/uncle-bob/2014/04/25/MonogamousTDD.html", target="blank">“Monogamous TDD”</a>
+
+> *When a blog begins like this&hellip; 'Test-first fundamentalism is like abstinence-only sex ed: An unrealistic, ineffective morality campaign for self-loathing and shaming.'&hellip;you have to wonder if the rest of the post can recover its credibility, or whether it will continue as an unreasoned rant.*
+
+*April 29*: <a href="https://twitter.com/dhh", target="blank">DHH</a> posts <a href="http://david.heinemeierhansson.com/2014/test-induced-design-damage.html", target="blank">“Test-induced Design Damage”</a>
+
+> *When you stop driving your design first, and primarily, through your tests, your eyes will open to much more interesting perspectives on the code. The answer to how can I make it better, is how can I make it clearer, not how can I test it faster or more isolated.*
+> *The design integrity of your system is far more important than being able to test it any particular layer. Stop obsessing about unit tests, embrace backfilling of tests when you're happy with the design, and strive for overall system clarity as your principle pursuit.*
+
+*April 30*: <a href="https://twitter.com/unclebobmartin", target="blank">Uncle Bob</a> posts <a href="http://blog.8thlight.com/uncle-bob/2014/04/30/When-tdd-does-not-work.html", target="blank">"When TDD Doesn’t Work”</a>
+
+> *So, now we have two places where TDD is impractical or inappropriate. The physical boundary, and the layer just in front of that boundary that requires human interaction to fiddle with the results. Are there any other areas where tests aren't appropriate? Yes. The test code itself. I don't mean the actual unit tests. I mean the support code for those unit tests. The FitNesse fixtures, or the cucumber steps, or the Object Mothers, or the Test Doubles. You don't have to write tests for those because the actual unit tests and the production code are the tests for those pieces of code. That's really about it. For pretty much everything else you can write tests, and you can write them first. For pretty much everything else, you can use TDD.*
+> *From my point of view, exporting logic is nothing more than separating concerns. In this case we separate the code that must be fiddled from the code that can be tested. Those two domains of code will change for very different reasons and at very different rates; so it is wise to separate them. Separating them is good design.*
+
+*April 30*: <a href="https://twitter.com/dhh", target="blank">DHH</a> posts <a href="http://david.heinemeierhansson.com/2014/slow-database-test-fallacy.html", target="blank">“Slow Database Test Fallacy"</a>
+
+> *So please. Don't pervert your architecture in order to prematurely optimize for the performance characteristics of the mid-nineties. Embrace the awesome power of modern computers, and revel in the clarity of a code base unharmed by test-induced design damage.*
+
+*April 30*: <a href="https://twitter.com/garybernhardt", target="blank">Gary Bernhardt</a> posts <a href="https://www.destroyallsoftware.com/blog/2014/tdd-straw-men-and-rhetoric", target="blank">“TDD, Straw Men, and Rhetoric”</a>
+
+> *In a blog post called Slow database test fallacy, David Heinemeier Hansson, the creator of Rails, begins: 'The classical definition of a unit test in TDD lore is one that doesn't touch the database.'*
+
+> *First, you can immediately tell that this piece of writing is going to be heavily rhetorical. He refers to "TDD lore" as opposed to, say, "TDD practice". By using the word "lore", he positions it as subjective, unreliable, mythological. Second, that sentence is false. Isolation from the database, or anything else, is generally done with mocks, but mocks didn't even exist when TDD was rediscovered by Kent Beck in 1994-1995. They were introduced at XP2000 in a paper called Endo-Testing: Unit Testing with Mock Objects, and it took a long time after that for them to gain popularity. Their role in software development was still being fleshed out in 2004 when Mock Roles, Not Objects was published.*
+> *Classical TDD does not involve mocking or other forms of synthetic isolation by definition. We even use the term "classical TDD" to mean "TDD without isolation.*
+> *David used the word "classical" not because it's correct, but because it implies "old". This is the beginning of a series of rhetorical techniques that he uses to incorrectly associate isolated unit testing with "oldness”.*
+
+
+*Gary then announces his post on the subject.*
+
+![](<%= asset_path(:images, 'gary-tweet-1.png') %>)
+
+*Gary then announces his post on the subject specifically to DHH (them's fightin' words)*
+
+![](<%= asset_path(:images, 'gary-tweet-2.png') %>)
+
+*And that odd fur-ball Aaron Patterson adequately describes the situation at hand with this* <a href="http://i.imgur.com/xW5Gusy.gif", target="blank">gif</a>.*
+
+![](<%= asset_path(:images, 'tenderlove.png') %>)
+
+*May 1*: <a href="https://twitter.com/unclebobmartin", target="blank">Uncle Bob</a> posts <a href="http://blog.8thlight.com/uncle-bob/2014/05/01/Design-Damage.html", target="blank">“Test Induced Design Damage?”</a>
+
+> *Recently, I read Test Induced Design Damage by DHH. In it he refers to Jim's talk, and then asserts that Jim was damaging the design of his application. That's not what I saw. Not at all. What I saw was a tightly interwoven mass of rails and business logic being teased apart by a master of his craft. The result was, frankly, beautiful. At the end of his talk, the students began to realize all the options this new structure gave them. You can see Jim's eyes light up as he sees that his message has gotten through, and as he amplifies their observations with even more of his own.*
+
+*May 2*: <a href="https://twitter.com/unclebobmartin", target="blank">Uncle Bob</a> posts <a href="http://blog.8thlight.com/uncle-bob/2014/05/02/ProfessionalismAndTDD.html", target="blank">“Professionalism and TDD (Reprise)”</a>
+
+> *If I am right... If TDD is as significant to software as hand-washing was to medicine and is instrumental in pulling us back from the brink of that looming catastrophe, then Kent Beck will be hailed a hero, and TDD will carry the full weight of professionalism. After that, those who refuse to practice TDD will be excused from the ranks of professional programmers. It would not surprise me if, one day, TDD had the force of law behind it.*
+
+And finally - with many the tweet activity still high on the subject, ThoughtWorks steps up to the plate as mediator by hosting a public google hangout on May 9, 11:00AM EST, where Martin Fowler, Kent Beck, and DHH will debate the pros and cons of TDD. (So tune in…)
+
+The abstract as follows:
+
+> "TDD as One True Way" versus "TDD as devil-spawned tempter" is not a productive contrast. Most of us have similar goals for development: confidence, impact, challenge, belonging. Test-driven development is one path toward these goals, but there are many other paths. This conversation in six parts explores tradeoffs in development, places TDD in those tradeoffs, and gives you perspective with which you can decide for yourself how you want to program.
+
+I will be there. Virtual front row with my popcorn in hand and channeling my inner MJ (thank you <a href="https://twitter.com/tenderlove", target="blank">@tenderlove</a>).
