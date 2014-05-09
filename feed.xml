@@ -20,7 +20,7 @@
     </author>
     <content type="html">&lt;p&gt;&lt;img src="/images/nukes.png" /&gt;&lt;/p&gt;
 
-&lt;p&gt;At Rails Conference 2014, David Heinemeier Hansson (DHH) delivered the kickoff Keynote, where in one fail swoop, he killed &lt;a href="http://en.wikipedia.org/wiki/Test-driven_development", target="blank"&gt;Test Driven Development (TDD)&lt;/a&gt;, essentially proclaiming TDD as no more than a cheap diet fad that ruins the design of software and also makes you feel FAT (not PHAT). In fact, if you practice TDD, you are probably just another irrational zealot.&lt;/p&gt;
+&lt;p&gt;At Rails Conference 2014, David Heinemeier Hansson (DHH) delivered the kickoff Keynote, where in one &amp;#39;fail&amp;#39; swoop, he killed &lt;a href="http://en.wikipedia.org/wiki/Test-driven_development", target="blank"&gt;Test Driven Development (TDD)&lt;/a&gt;, essentially proclaiming TDD as no more than a cheap diet fad that ruins the design of software and also makes you feel FAT (not PHAT). In fact, if you practice TDD, you are probably just another irrational zealot.&lt;/p&gt;
 
 &lt;p&gt;Okay - maybe not exactly like that, but DHH’s delivery was polarizing to say the least, and consequently, the above is what a lot of people &lt;em&gt;heard&lt;/em&gt;. They heard, “TDD is Dead”, or “Testing is Dead&amp;quot;, and as such, he might as well have nuked the crowd with an atomic bomb, because the fallout is reverberating.&lt;/p&gt;
 
@@ -64,7 +64,7 @@ The rest of the speech hardly matters at this point, because this is where he ki
 &lt;p&gt;Chaotic tweets ensue with many hailing DHH’s shot to TDD, while others are red-faced and forming lynch mobs. Quite a few are making jokes for both sides. Quickly a volley of opinions are exchanged through tweets and blogs. I found the blog posts to be the most productive and so I’ve placed the more notable opinions in chronological order below, and I highly recommend reading through them to grasp the whole story. I also worked in a few tweets because well&amp;hellip; some of these cats really do put on a good show. 
 This certainly doesn’t encompass all things said, or even all viewpoints, and apologies in advance for missing any key posts (just hit me up on Twitter, &lt;a href="https://twitter.com/BreeThomas33", target="blank"&gt;@BreeThomas33&lt;/a&gt;, if I need to add one), but I’m hoping this provides a path for people (noobs especially of course) to hear the arguments from some of the more seasoned and vocal seniors in the community.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;April 23&lt;/em&gt;: &lt;a href="https://twitter.com/dhh", target="blank"&gt;DHH&lt;/a&gt; posts &lt;a href="http://david.heinemeierhansson.com/2014/tdd-is-dead-long-live-testing.html", target="blank"&gt;“TDD is Dead. Long Live Testing” as a followup to his keynote.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;April 23&lt;/em&gt;: &lt;a href="https://twitter.com/dhh", target="blank"&gt;DHH&lt;/a&gt; posts &lt;a href="http://david.heinemeierhansson.com/2014/tdd-is-dead-long-live-testing.html", target="blank"&gt;“TDD is Dead. Long Live Testing”&lt;/a&gt; as a followup to his keynote.&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;Test-first fundamentalism is like abstinence-only sex ed: An unrealistic, ineffective morality campaign for self-loathing and shaming.&lt;/em&gt;&lt;/p&gt;
@@ -72,7 +72,9 @@ This certainly doesn’t encompass all things said, or even all viewpoints, and 
 
 &lt;p&gt;&lt;em&gt;April 24&lt;/em&gt;: &lt;a href="https://twitter.com/dhh", target="blank"&gt;DHH&lt;/a&gt; appears annoyed with the twitter-sphere.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="/images/dhh-tweet.png" /&gt;&lt;/p&gt;
+&lt;blockquote class="twitter-tweet" lang="en"&gt;&lt;p&gt;If your TL;DR of my talk and post on TDD was &amp;quot;great, I don&amp;#39;t have to write tests!&amp;quot;, your comprehension skills are inadequate. Level up.&lt;/p&gt;&amp;mdash; DHH (@dhh) &lt;a href="https://twitter.com/dhh/statuses/459329011420647424"&gt;April 24, 2014&lt;/a&gt;&lt;/blockquote&gt;
+
+&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
 
 &lt;p&gt;&lt;em&gt;April 25&lt;/em&gt;: &lt;a href="https://twitter.com/unclebobmartin", target="blank"&gt;Uncle Bob&lt;/a&gt; responds to “TDD is Dead. Long Live Testing” with &lt;a href="http://blog.8thlight.com/uncle-bob/2014/04/25/MonogamousTDD.html", target="blank"&gt;“Monogamous TDD”&lt;/a&gt;&lt;/p&gt;
 
@@ -112,15 +114,21 @@ This certainly doesn’t encompass all things said, or even all viewpoints, and 
 
 &lt;p&gt;&lt;em&gt;Gary then announces his post on the subject.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="/images/gary-tweet-1.png" /&gt;&lt;/p&gt;
+&lt;blockquote class="twitter-tweet" lang="en"&gt;&lt;p&gt;Blogged: &amp;quot;TDD, Straw Men, and Rhetoric&amp;quot; &lt;a href="https://t.co/rTDGv6aK9e"&gt;https://t.co/rTDGv6aK9e&lt;/a&gt;&lt;/p&gt;&amp;mdash; Gary Bernhardt (@garybernhardt) &lt;a href="https://twitter.com/garybernhardt/statuses/461621748819951616"&gt;April 30, 2014&lt;/a&gt;&lt;/blockquote&gt;
+
+&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
 
 &lt;p&gt;&lt;em&gt;Gary then announces his post on the subject specifically to DHH (them&amp;#39;s fightin&amp;#39; words)&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src="/images/gary-tweet-2.png" /&gt;&lt;/p&gt;
+&lt;blockquote class="twitter-tweet" lang="en"&gt;&lt;p&gt;&lt;a href="https://twitter.com/dhh"&gt;@dhh&lt;/a&gt; sup&lt;/p&gt;&amp;mdash; Gary Bernhardt (@garybernhardt) &lt;a href="https://twitter.com/garybernhardt/statuses/461626188738228227"&gt;April 30, 2014&lt;/a&gt;&lt;/blockquote&gt;
 
-&lt;p&gt;&lt;em&gt;And that odd fur-ball Aaron Patterson adequately describes the situation at hand with this&lt;/em&gt; &lt;a href="http://i.imgur.com/xW5Gusy.gif", target="blank"&gt;gif&lt;/a&gt;.*&lt;/p&gt;
+&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
 
-&lt;p&gt;&lt;img src="/images/tenderlove.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;And that odd fur-ball Aaron Patterson adequately describes the situation at hand with an animated&lt;/em&gt; &lt;a href="http://i.imgur.com/xW5Gusy.gif", target="blank"&gt;gif&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote class="twitter-tweet" lang="en"&gt;&lt;p&gt;&lt;a href="https://twitter.com/garybernhardt"&gt;@garybernhardt&lt;/a&gt; &lt;a href="https://twitter.com/dhh"&gt;@dhh&lt;/a&gt; &lt;a href="http://t.co/inLchk3044"&gt;http://t.co/inLchk3044&lt;/a&gt;&lt;/p&gt;&amp;mdash; Aaron Patterson (@tenderlove) &lt;a href="https://twitter.com/tenderlove/statuses/461627198378475520"&gt;April 30, 2014&lt;/a&gt;&lt;/blockquote&gt;
+
+&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
 
 &lt;p&gt;&lt;em&gt;May 1&lt;/em&gt;: &lt;a href="https://twitter.com/unclebobmartin", target="blank"&gt;Uncle Bob&lt;/a&gt; posts &lt;a href="http://blog.8thlight.com/uncle-bob/2014/05/01/Design-Damage.html", target="blank"&gt;“Test Induced Design Damage?”&lt;/a&gt;&lt;/p&gt;
 
@@ -134,7 +142,7 @@ This certainly doesn’t encompass all things said, or even all viewpoints, and 
 &lt;p&gt;&lt;em&gt;If I am right... If TDD is as significant to software as hand-washing was to medicine and is instrumental in pulling us back from the brink of that looming catastrophe, then Kent Beck will be hailed a hero, and TDD will carry the full weight of professionalism. After that, those who refuse to practice TDD will be excused from the ranks of professional programmers. It would not surprise me if, one day, TDD had the force of law behind it.&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;And finally - with many the tweet activity still high on the subject, ThoughtWorks steps up to the plate as mediator by hosting a public google hangout on May 9, 11:00AM EST, where Martin Fowler, Kent Beck, and DHH will debate the pros and cons of TDD. (So tune in…)&lt;/p&gt;
+&lt;p&gt;And finally - with many the tweet activity still high on the subject, &lt;a href="http://www.thoughtworks.com/", target="blank"&gt;ThoughtWorks&lt;/a&gt; steps up to the plate as mediator by hosting a public &lt;a href="https://plus.google.com/events/ci2g23mk0lh9too9bgbp3rbut0k", target="blank"&gt;google hangout on May 9, 11:00AM EST&lt;/a&gt;, where Martin Fowler, Kent Beck, and DHH will debate the pros and cons of TDD. (So tune in…)&lt;/p&gt;
 
 &lt;p&gt;The abstract as follows:&lt;/p&gt;
 
